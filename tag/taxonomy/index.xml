@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>taxonomy | Academic</title>
+    <link>https://jfy133.github.com/tag/taxonomy/</link>
+      <atom:link href="https://jfy133.github.com/tag/taxonomy/index.xml" rel="self" type="application/rss+xml" />
+    <description>taxonomy</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-gb</language><copyright>© 2021 James A. Fellows Yates</copyright><lastBuildDate>Tue, 17 Mar 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://jfy133.github.com/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <title>taxonomy</title>
+      <link>https://jfy133.github.com/tag/taxonomy/</link>
+    </image>
+    
+    <item>
+      <title>All Possible NCBI Taxonomy Ranks</title>
+      <link>https://jfy133.github.com/post/2020-07-23-all-ncbi-taxonomy-ranks/2020-07-23-all-ncbi-taxonomy-ranks/</link>
+      <pubDate>Tue, 17 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>https://jfy133.github.com/post/2020-07-23-all-ncbi-taxonomy-ranks/2020-07-23-all-ncbi-taxonomy-ranks/</guid>
+      <description>&lt;p&gt;It was bothering me that nowhere on the NCBI website are all possible taxonomic
+&amp;lsquo;ranks&amp;rsquo; actually described.&lt;/p&gt;
+&lt;p&gt;I eventually decided to go back to basics and literally download the raw data
+the NCBI taxonomy website is based on - the infamous &lt;code&gt;taxonomy.dmp&lt;/code&gt;, find the
+column that gives a rank for &lt;em&gt;every single tax. ID&lt;/em&gt;, and collapse to all unique
+values.&lt;/p&gt;
+&lt;p&gt;To do this I downloaded and extracted the taxonomy dump as follows:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;wget ftp://ftp.ncbi.nih.gov/pub/taxonomy/new_taxdump/new_taxdump.zip
+unzip new_taxdump.zip
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Then after hunting through all the files, the one I wanted was &lt;code&gt;nodes.dmp&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;The rank is recorded in the third column,&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-text&#34;&gt;$ head nodes.dmp
+1 | 1 | no rank |   | 8 | 0 | 1 | 0 | 0 | 0 | 0 | 0 |   |   ||  0 | 0 | 0 |
+2 | 131567  | superkingdom  |   | 0 | 0 | 11  | 0 | 0 | 0 | 0 | 0 |   | ||  0 | 0 | 1 |
+6 | 335928  | genus |   | 0 | 1 | 11  | 1 | 0 | 1 | 0 | 0 |   |   ||  0 | 0 | 1 |
+7 | 6 | species | AC  | 0 | 1 | 11  | 1 | 0 | 1 | 1 | 0 |   |   ||  1 | 0 | 1 |
+9 | 32199 | species | BA  | 0 | 1 | 11  | 1 | 0 | 1 | 1 | 0 |   |   ||  1 | 0 | 1 |
+10  | 1706371 | genus |   | 0 | 1 | 11  | 1 | 0 | 1 | 0 | 0 |   |   ||  0 | 0 | 1 |
+11  | 1707  | species | CG  | 0 | 1 | 11  | 1 | 0 | 1 | 1 | 0 | effective current name; |   |   | 1 | 0 | 1 |
+13  | 203488  | genus |   | 0 | 1 | 11  | 1 | 0 | 1 | 0 | 0 |   |   ||  0 | 0 | 1 |
+14  | 13  | species | DT  | 0 | 1 | 11  | 1 | 0 | 1 | 1 | 0 |   |   ||  1 | 0 | 1 |
+16  | 32011 | genus |   | 0 | 1 | 11  | 1 | 0 | 1 | 0 | 0 |   |   ||  0 | 0 | 1 |
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;So to extract the column using and collapse to single values, run the following
+bash-fu&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;cat nodes.dmp | cut -d &#39;|&#39; -f 3  | sort | uniq
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;You get the following result&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-text&#34;&gt;biotype
+clade
+class
+cohort
+family
+forma
+forma specialis
+genotype
+genus
+infraclass
+infraorder
+isolate
+kingdom
+morph
+no rank
+order
+parvorder
+pathogroup
+phylum
+section
+series
+serogroup
+serotype
+species
+species group
+species subgroup
+strain
+subclass
+subcohort
+subfamily
+subgenus
+subkingdom
+suborder
+subphylum
+subsection
+subspecies
+subtribe
+subvariety
+superclass
+superfamily
+superkingdom
+superorder
+superphylum
+tribe
+varietas
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Note that this doesn&amp;rsquo;t actually give you the hierarchy of all the wierd and
+wonderful &amp;lsquo;custom&amp;rsquo; groups taxonomists have come up with. However I found by
+googling &amp;lsquo;NCBI taxonomy &amp;lt;random_rank&amp;gt;&amp;rsquo; I could find enough examples that told me
+approximately where they fell compared to the standard ranks (even if they are
+technically analogous e.g. strain vs varietas)&lt;/p&gt;
+&lt;p&gt;The ones I did find:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;parvorder - comes after order&lt;/li&gt;
+&lt;li&gt;section - comes after genus&lt;/li&gt;
+&lt;li&gt;&amp;lsquo;strain&amp;rsquo;, &amp;lsquo;morph&amp;rsquo;, &amp;lsquo;forma specialis&amp;rsquo; - comes after species&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

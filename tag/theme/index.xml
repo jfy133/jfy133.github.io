@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>theme | Academic</title>
+    <link>https://jfy133.github.com/tag/theme/</link>
+      <atom:link href="https://jfy133.github.com/tag/theme/index.xml" rel="self" type="application/rss+xml" />
+    <description>theme</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-gb</language><copyright>© 2021 James A. Fellows Yates</copyright><lastBuildDate>Sun, 08 Oct 2017 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://jfy133.github.com/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <title>theme</title>
+      <link>https://jfy133.github.com/tag/theme/</link>
+    </image>
+    
+    <item>
+      <title>Updating a Github Pages Theme Through a Repo Merge</title>
+      <link>https://jfy133.github.com/post/2017-10-08-updating-github-pages-theme/2017-10-08-updating-github-pages-theme/</link>
+      <pubDate>Sun, 08 Oct 2017 00:00:00 +0000</pubDate>
+      <guid>https://jfy133.github.com/post/2017-10-08-updating-github-pages-theme/2017-10-08-updating-github-pages-theme/</guid>
+      <description>&lt;p&gt;I am new to Git and Github, and so I am still very much learning on the fly.
+Today I noticed the original repository for the theme of this website had added
+updates, so I thought to apply them to my own repository.&lt;/p&gt;
+&lt;p&gt;This wasn&amp;rsquo;t as straightforward as it seemed, so here I have written down
+my instructions how to apply the fixes in the future.&lt;/p&gt;
+&lt;p&gt;The instructions are essentially a merging of what I read on these three pages:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://help.github.com/articles/fork-a-repo/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://help.github.com/articles/fork-a-repo/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://help.github.com/articles/syncing-a-fork/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://help.github.com/articles/syncing-a-fork/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://genomewiki.ucsc.edu/index.php/Resolving_merge_conflicts_in_Git&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;http://genomewiki.ucsc.edu/index.php/Resolving_merge_conflicts_in_Git&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I assume this is applicable for all Git related repo manipulations, but in this
+tutorial I am focusing on updating a Github pages theme.&lt;/p&gt;
+&lt;h1 id=&#34;instructions&#34;&gt;Instructions&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;Change into my local repository on my laptop, and initialise&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt;cd ~/&amp;lt;path&amp;gt;/&amp;lt;to&amp;gt;/&amp;lt;local_repo/
+git init
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;Check the remote information, and if no upstream branches present - add them. In this case I&amp;rsquo;m using the repo I used for my website&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt;git remote -v
+git remote add upstream https://github.com/academicpages/academicpages.github.io.git
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;Find the changes in the upstream branch&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt;git fetch upstream
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;Now check out of branch (not sure if this was needed, but didn&amp;rsquo;t do any harm)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt;git checkout master
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&#34;5&#34;&gt;
+&lt;li&gt;Now we attempt to merge the changes. Git will take anything in the upstream branch, and if no change has been made on the my personal repo in the past, will make the change. Otherwise, &lt;code&gt;merge conflict&lt;/code&gt; errors will be printed to screen.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt;git merge upstream/master
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&#34;6&#34;&gt;
+&lt;li&gt;Take a look at which files have the merge conflicts, and inside each file look at the sections with &lt;code&gt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&lt;/code&gt;, &lt;code&gt;=====&lt;/code&gt; or &lt;code&gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&amp;gt;&lt;/code&gt; and manually remove the changes (normally the upstream, or one below the &lt;code&gt;=====&lt;/code&gt;) that you don&amp;rsquo;t want changed. Remove the symbols above as well, save the the file. Add the file to the commit to indicate you&amp;rsquo;ve &amp;lsquo;fixed&amp;rsquo;
+the merge conflict, for example:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt;git add _config.yml
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&#34;7&#34;&gt;
+&lt;li&gt;Once you&amp;rsquo;ve fixed all the merge conflicts, you can do a normal git commit and push.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt;git commit -m &amp;quot;Merged with &amp;lt;upstream_repo&amp;gt;&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;And with that your website theme should be updated.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

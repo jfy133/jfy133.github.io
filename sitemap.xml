@@ -11,6 +11,12 @@
     <loc>https://jfy133.github.com/event/</loc>
     <lastmod>2030-06-01T13:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://jfy133.github.com/post/my-article-name/</loc>
+    <lastmod>2021-09-06T13:16:06+02:00</lastmod>
+  </url><url>
+    <loc>https://jfy133.github.com/post/</loc>
+    <lastmod>2021-09-06T13:16:06+02:00</lastmod>
+  </url><url>
     <loc>https://jfy133.github.com/tag/academic/</loc>
     <lastmod>2020-12-13T00:00:00+00:00</lastmod>
   </url><url>
@@ -18,9 +24,6 @@
     <lastmod>2020-12-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://jfy133.github.com/category/demo/</loc>
-    <lastmod>2020-12-13T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://jfy133.github.com/post/</loc>
     <lastmod>2020-12-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://jfy133.github.com/tags/</loc>
@@ -35,11 +38,104 @@
     <loc>https://jfy133.github.com/category/%E6%95%99%E7%A8%8B/</loc>
     <lastmod>2020-12-13T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://jfy133.github.com/tag/adna/</loc>
+    <lastmod>2020-03-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jfy133.github.com/post/2020-07-23-all-ncbi-taxonomy-ranks/2020-07-23-all-ncbi-taxonomy-ranks/</loc>
+    <lastmod>2020-03-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jfy133.github.com/tag/archaeogenetics/</loc>
+    <lastmod>2020-03-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jfy133.github.com/tag/bioinformatics/</loc>
+    <lastmod>2020-03-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jfy133.github.com/tag/eager2/</loc>
+    <lastmod>2020-03-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jfy133.github.com/post/2020-03-17-nfcore-eager-tutorial/2020-03-17-nfcore-eager-tutorial/</loc>
+    <lastmod>2020-03-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jfy133.github.com/tag/ncbi/</loc>
+    <lastmod>2020-03-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jfy133.github.com/tag/palaeogenetics/</loc>
+    <lastmod>2020-03-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jfy133.github.com/tag/simple/</loc>
+    <lastmod>2020-03-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jfy133.github.com/tag/taxonomy/</loc>
+    <lastmod>2020-03-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jfy133.github.com/tag/tutorial/</loc>
+    <lastmod>2020-03-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jfy133.github.com/tag/bootstrap_values/</loc>
+    <lastmod>2019-06-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jfy133.github.com/tag/ggtree/</loc>
+    <lastmod>2019-06-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jfy133.github.com/tag/pvclust/</loc>
+    <lastmod>2019-06-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jfy133.github.com/post/2019-06-18-pvclust-nodevalues-in-ggtree/2019-06-18-pvclust-nodevalues-in-ggtree/</loc>
+    <lastmod>2019-06-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jfy133.github.com/post/2019-05-03-tidy-popgen-pca-plotting-in-r/2019-05-03-tidy-popgen-pca-plotting-in-r/</loc>
+    <lastmod>2019-05-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jfy133.github.com/tag/pop-gen/</loc>
+    <lastmod>2019-05-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jfy133.github.com/tag/r/</loc>
+    <lastmod>2019-05-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jfy133.github.com/tag/tidyverse/</loc>
+    <lastmod>2019-05-03T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://jfy133.github.com/slides/</loc>
     <lastmod>2019-02-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://jfy133.github.com/slides/example/</loc>
     <lastmod>2019-02-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jfy133.github.com/tag/github/</loc>
+    <lastmod>2017-10-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jfy133.github.com/tag/jekyll/</loc>
+    <lastmod>2017-10-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jfy133.github.com/tag/theme/</loc>
+    <lastmod>2017-10-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jfy133.github.com/post/2017-10-08-updating-github-pages-theme/2017-10-08-updating-github-pages-theme/</loc>
+    <lastmod>2017-10-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jfy133.github.com/tag/website/</loc>
+    <lastmod>2017-10-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jfy133.github.com/post/2017-08-03-sequin-genbank-submission/2017-08-03-sequin-genbank-submission/</loc>
+    <lastmod>2017-08-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jfy133.github.com/tag/how-to/</loc>
+    <lastmod>2017-05-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jfy133.github.com/post/2017-05-28-cancel-mybayes-early/2017-05-28-cancel-mybayes-early/</loc>
+    <lastmod>2017-05-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jfy133.github.com/post/2017-05-28-maps-in-r/2017-05-28-maps-in-r/</loc>
+    <lastmod>2017-05-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jfy133.github.com/tag/maps/</loc>
+    <lastmod>2017-05-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jfy133.github.com/tag/mrbayes/</loc>
+    <lastmod>2017-05-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jfy133.github.com/tag/phylogenetics/</loc>
+    <lastmod>2017-05-28T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://jfy133.github.com/tag/deep-learning/</loc>
     <lastmod>2016-04-27T00:00:00+00:00</lastmod>
@@ -63,5 +159,7 @@
     <lastmod>2013-07-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://jfy133.github.com/admin/</loc>
+  </url><url>
+    <loc>https://jfy133.github.com/tag/nf-core/eager/</loc>
   </url>
 </urlset>

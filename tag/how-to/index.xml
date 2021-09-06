@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>how-to | Academic</title>
+    <link>https://jfy133.github.com/tag/how-to/</link>
+      <atom:link href="https://jfy133.github.com/tag/how-to/index.xml" rel="self" type="application/rss+xml" />
+    <description>how-to</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-gb</language><copyright>© 2021 James A. Fellows Yates</copyright><lastBuildDate>Sun, 28 May 2017 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://jfy133.github.com/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <title>how-to</title>
+      <link>https://jfy133.github.com/tag/how-to/</link>
+    </image>
+    
+    <item>
+      <title>How-to: Simple &#39;change over time&#39; maps in R</title>
+      <link>https://jfy133.github.com/post/2017-05-28-maps-in-r/2017-05-28-maps-in-r/</link>
+      <pubDate>Sun, 28 May 2017 00:00:00 +0000</pubDate>
+      <guid>https://jfy133.github.com/post/2017-05-28-maps-in-r/2017-05-28-maps-in-r/</guid>
+      <description>&lt;p&gt;In Archaeology, or other disciplines that looking through deep time, you often want to represent change through time. A simple example of this, is representing the location different archaeological sites through different cultural periods.&lt;/p&gt;
+&lt;p&gt;I have had an issue quite a few times during my B.Sc., M.Sc. and now in my P.hD., which is how to quickly make a series of &amp;lsquo;semi&amp;rsquo; good-looking maps, that simply represent the locations of different sites over time.&lt;/p&gt;
+&lt;p&gt;Many people use fancy programs like &lt;a href=&#34;http://www.qgis.org/en/site/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;qGIS&lt;/a&gt; to include terrain and other details, but often these tools (although powerful) are unwieldy to use and take a long time to get familiar with before producing something you are looking for. Although &lt;a href=&#34;http://maps.google.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Google Maps&lt;/a&gt; is another alternative - such as through &lt;a href=&#34;http://drive.google.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Google Drive&amp;rsquo;s&lt;/a&gt; Fusion tables, often I find this still does not look as professional as those you see in academic publications.&lt;/p&gt;
+&lt;p&gt;The programming language I am most familiar with currently is &lt;a href=&#34;https://www.r-project.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;R&lt;/a&gt;, and although this also has a learning-curve, it is not too hard to copy and paste code into something like &lt;a href=&#34;https://www.rstudio.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;R-Studio&lt;/a&gt; and quickly get some output. Furthermore, for scientists, R is one of the best languages to go to for data analysis and manipulating data (as well as getting pretty plots).&lt;/p&gt;
+&lt;p&gt;Googling &amp;ldquo;maps in R&amp;rdquo; show many posts on how to do just that. However when I have tried this multiple times in the past, the many tutorials were either out-of-date, using packages that were even more out of date (one I used a year ago still used a map that had the Soviet Union!) and often these tutorials did not just give you an example of simply placing points on a map!&lt;/p&gt;
+&lt;p&gt;The closet tutorial I found was from here:  &lt;a href=&#34;https://www.r-bloggers.com/world-map-panel-plots-with-ggplot2-2-0-ggalt/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.r-bloggers.com/world-map-panel-plots-with-ggplot2-2-0-ggalt/&lt;/a&gt;, yet this was still doing much more than I actually needed.&lt;/p&gt;
+&lt;p&gt;Here, I will document the simplest solution I have found, based on the above, requiring only a table of sites with metadata including &amp;lsquo;lat:lon&amp;rsquo; coordinates (in the form of decimals, as you would get from Google Maps), the base install of R, and the (arguably) best looking and most popular plotting package &lt;a href=&#34;http://ggplot2.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ggplot2&lt;/a&gt;,&lt;/p&gt;
+&lt;p&gt;For this example, I will use the coordinates of the places I have previously studied in and save this as a .tsv (tab separated) file :&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;City&lt;/th&gt;
+&lt;th&gt;Lat&lt;/th&gt;
+&lt;th&gt;Long&lt;/th&gt;
+&lt;th&gt;PeriodYork&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;York&lt;/td&gt;
+&lt;td&gt;53.943540&lt;/td&gt;
+&lt;td&gt;-1.061194&lt;/td&gt;
+&lt;td&gt;B.Sc.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Tübingen&lt;/td&gt;
+&lt;td&gt;48.518484&lt;/td&gt;
+&lt;td&gt;9.058082&lt;/td&gt;
+&lt;td&gt;M.Sc.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Jena&lt;/td&gt;
+&lt;td&gt;50.903443&lt;/td&gt;
+&lt;td&gt;50.903443&lt;/td&gt;
+&lt;td&gt;Ph.D.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;I then ran the following R commands (in R v3.2.3):&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-Rscript&#34;&gt;##Load library ggplot2 (to install: install.packages(&amp;quot;ggplot2&amp;quot;), and choose your closest server
+library(ggplot2)
+##Set your working directory
+setwd(&amp;quot;~/Downloads&amp;quot;)
+##Load the world map from within ggplot2 and remove antarctica
+##(you can leave the removal of a country out, or add more countries with a list)
+world &amp;lt;- map_data(&amp;quot;world&amp;quot;)
+world &amp;lt;- world[world$region != &amp;quot;Antarctica&amp;quot;,]
+
+##Load your data
+dat &amp;lt;- read.csv(&amp;quot;city_coords.tsv&amp;quot;, sep=&amp;quot;\t&amp;quot;, header=TRUE)
+
+##Here you load your ggplot object into a variable
+gg &amp;lt;- ggplot()
+
+##Here you format your world map, line colour, object fill, and line size
+##and transparency
+gg &amp;lt;- gg + geom_map(data=world, map=world,
+aes(x=long, y=lat, map_id=region),
+color=&amp;quot;white&amp;quot;, fill=&amp;quot;#7f7f7f&amp;quot;, size=0.05, alpha=1/4)
+
+##Here you apply your points you wish to project onto the map,
+##in this case automatically coloured by another variable (Period).
+##You can define the colours you wish of each period by adding
+##+ scale_color_manual(values=c(&amp;quot;#377eb8&amp;quot;, &amp;quot;#984ea3&amp;quot;, &amp;quot;#4daf4a&amp;quot;))
+##after the geom_point close bracket. Each RGB colour represents the
+##colour of each entry in the &#39;Period&#39; column, in alphabetical order.
+gg &amp;lt;- gg + geom_point(data=dat,
+aes(x=Long, y=Lat, color=Period),
+size=1)
+
+##Here you can remove the legend, look into ggplot2&#39;s theme() variable
+##to remove other things like tick marks etc.
+gg &amp;lt;- gg + theme(legend.position=&amp;quot;none&amp;quot;)
+
+##Here you can &#39;crop&#39; your picture to a region you are interested in,
+##and apply this in the decimal coordinate system as with your points.
+##You will have to play around with this a lot depending on what you
+##want to crop out, as how this displayed depends on your plot window size
+##(draggable in R)
+longlimits &amp;lt;- c(-10, 20)
+latlimits &amp;lt;- c(40, 60)
+gg &amp;lt;- gg + coord_cartesian(xlim = longlimits, ylim = latlimits)
+
+#Open the final image, saying you want a column with each time period on
+##each row. To make horizontal you switch the Period with the full stop.
+gg + facet_grid(Period ~ .)
+
+##Adapted from:
+## https://www.r-bloggers.com/world-map-panel-plots-with-ggplot2-2-0-ggalt/
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;And you will get something like the following output (following some resizing of the window):&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://jfy133.github.com/images/2017-05-28_2.png&#34; alt=&#34;Example time series map from R and ggplot2&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;Once you&amp;rsquo;ve got the image you like, you can then save in a variety of formats by adding the R functions &lt;code&gt;svg(&amp;quot;my_map.svg&amp;quot;, width=5, height=10)&lt;/code&gt; or &lt;code&gt;png(&amp;quot;my_map.png&amp;quot;, width=50, height=100)&lt;/code&gt; prior the final command and putting &lt;code&gt;dev.off()&lt;/code&gt; after the last command. The image should then be saved in your &amp;lsquo;working directory&amp;rsquo; set at the beginning.&lt;/p&gt;
+&lt;p&gt;Based on that basic outline, you can look into the ggplot2 for further modifications (point shapes, colouring by certain continuous values etc.)&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

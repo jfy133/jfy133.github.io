@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>archaeogenetics | Academic</title>
+    <link>https://jfy133.github.com/tag/archaeogenetics/</link>
+      <atom:link href="https://jfy133.github.com/tag/archaeogenetics/index.xml" rel="self" type="application/rss+xml" />
+    <description>archaeogenetics</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-gb</language><copyright>© 2021 James A. Fellows Yates</copyright><lastBuildDate>Tue, 17 Mar 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://jfy133.github.com/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <title>archaeogenetics</title>
+      <link>https://jfy133.github.com/tag/archaeogenetics/</link>
+    </image>
+    
+    <item>
+      <title>Gentle introduction to nf-core/eager</title>
+      <link>https://jfy133.github.com/post/2020-03-17-nfcore-eager-tutorial/2020-03-17-nfcore-eager-tutorial/</link>
+      <pubDate>Tue, 17 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>https://jfy133.github.com/post/2020-03-17-nfcore-eager-tutorial/2020-03-17-nfcore-eager-tutorial/</guid>
+      <description>&lt;p&gt;I have written a tutorial in the form of a slideshow, which step-by-step
+introduces a new user to &lt;a href=&#34;https://nf-co.re/eager&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;nf-core/eager&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;nf-core/eager is a reproducible and portable pipeline for pre-processing and performing standard ancient DNA
+screening analysis.&lt;/p&gt;
+&lt;iframe frameborder=&#34;no&#34; border=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; width=&#34;90%&#34; height=&#34;500&#34; src=&#34;https://jfy133.github.io/uploads/presentations/intro-to-nfcore-eager.html&#34;&gt;&lt;/iframe&gt;
+&lt;p&gt;Or in full screen here: &lt;a href=&#34;https://jfy133.github.io/uploads/presentations/intro-to-nfcore-eager.html&#34; title=&#34;:include :type=iframe width=100% height=600px&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Intro to nf-core/eager&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

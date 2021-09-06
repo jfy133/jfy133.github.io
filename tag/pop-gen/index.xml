@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>pop-gen | Academic</title>
+    <link>https://jfy133.github.com/tag/pop-gen/</link>
+      <atom:link href="https://jfy133.github.com/tag/pop-gen/index.xml" rel="self" type="application/rss+xml" />
+    <description>pop-gen</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-gb</language><copyright>© 2021 James A. Fellows Yates</copyright><lastBuildDate>Fri, 03 May 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://jfy133.github.com/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <title>pop-gen</title>
+      <link>https://jfy133.github.com/tag/pop-gen/</link>
+    </image>
+    
+    <item>
+      <title>&#39;Tidy&#39; Pop-Gen PCA plotting in R</title>
+      <link>https://jfy133.github.com/post/2019-05-03-tidy-popgen-pca-plotting-in-r/2019-05-03-tidy-popgen-pca-plotting-in-r/</link>
+      <pubDate>Fri, 03 May 2019 00:00:00 +0000</pubDate>
+      <guid>https://jfy133.github.com/post/2019-05-03-tidy-popgen-pca-plotting-in-r/2019-05-03-tidy-popgen-pca-plotting-in-r/</guid>
+      <description>&lt;p&gt;Many people in the human population-genetics groups in my department at MPI-SHH use a propetiary Mac specific program to make their figures of PCAs (principle component analysis). Some of the members of these groups however do not have Macs and were struggling to recreate some of the plots their collegues were making.&lt;/p&gt;
+&lt;p&gt;In response, I wrote a markdown document describing how you would recreate a PCA from a &lt;a href=&#34;https://doi.org/10.1038/s41467-018-07483-5&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;recent paper&lt;/a&gt; from my friend &lt;a href=&#34;https://github.com/TCLamnidis&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Thiseas Lamnidis&lt;/a&gt; but in R.&lt;/p&gt;
+&lt;p&gt;This tutorial is released under the open CC-BY-SA 4 license and can be viewed by anyone at the following link: &lt;a href=&#34;https://github.com/jfy133/Tidy_PopGen_PCA_Plotting&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/jfy133/Tidy_PopGen_PCA_Plotting&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I am updating the tutorial as requests come in for different modifications, so please check back regularly or leave an issue on the github repository with requests.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;tidy-popgen-pca-example.png&#34; alt=&#34;Example Result&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
