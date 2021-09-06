@@ -1,0 +1,1402 @@
+<!DOCTYPE html><html lang="en-gb" >
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Wowchemy 5.3.0 for Hugo" />
+  
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="James A. Fellows Yates" />
+
+  
+  
+  
+    
+  
+  <meta name="description" content="How to make change over time / time transect maps for Archaeological science" />
+
+  
+  <link rel="alternate" hreflang="en-gb" href="https://jfy133.github.com/post/2017-05-28-maps-in-r/" />
+
+  
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+
+  
+  
+  
+    <meta name="theme-color" content="#1565c0" />
+  
+
+  
+  
+
+  
+
+  <link rel="stylesheet" href="/css/vendor-bundle.min.f1ecf783c14edc00c9320c205831ad8e.css" media="print" onload="this.media='all'">
+
+  
+  
+  
+    
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.0/css/academicons.min.css" integrity="sha512-W4yqoT1+8NLkinBLBZko+dFB2ZbHsYLDdr50VElllRcNt2Q4/GSs6u71UHKxB7S6JEMCp5Ve4xjh3eGQl/HRvg==" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+    
+    
+    
+      
+      
+    
+    
+    
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/github.min.css" crossorigin="anonymous" title="hl-light" media="print" onload="this.media='all'">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" media="print" onload="this.media='all'" disabled>
+        
+      
+    
+
+    
+    
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+        
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+    
+      
+      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" media="print" onload="this.media='all'">
+    
+  
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.481af39c39ffd87b2d14f39943e7c723.css" />
+
+  
+
+
+
+  
+
+  
+
+  
+
+
+
+
+  
+  
+  
+
+  
+
+  
+    <link rel="manifest" href="/manifest.webmanifest" />
+  
+
+  <link rel="icon" type="image/png" href="/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_3.png" />
+  <link rel="apple-touch-icon" type="image/png" href="/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_180x180_fill_lanczos_center_3.png" />
+
+  <link rel="canonical" href="https://jfy133.github.com/post/2017-05-28-maps-in-r/" />
+
+  
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary" />
+  
+  <meta property="og:site_name" content="Academic" />
+  <meta property="og:url" content="https://jfy133.github.com/post/2017-05-28-maps-in-r/" />
+  <meta property="og:title" content="How-to: Simple &#39;change over time&#39; maps in R | Academic" />
+  <meta property="og:description" content="How to make change over time / time transect maps for Archaeological science" /><meta property="og:image" content="https://jfy133.github.com/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png" />
+    <meta property="twitter:image" content="https://jfy133.github.com/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png" /><meta property="og:locale" content="en-gb" />
+  
+    
+      <meta
+        property="article:published_time"
+        content="2017-05-28T00:00:00&#43;00:00"
+      />
+    
+    <meta property="article:modified_time" content="2017-05-28T00:00:00&#43;00:00">
+  
+
+  
+
+
+    
+
+
+
+
+
+
+  
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://jfy133.github.com/post/2017-05-28-maps-in-r/"
+  },
+  "headline": "How-to: Simple 'change over time' maps in R",
+  
+  "datePublished": "2017-05-28T00:00:00Z",
+  "dateModified": "2017-05-28T00:00:00Z",
+  
+  "author": {
+    "@type": "Person",
+    "name": "James A. Fellows Yates"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "Academic",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://jfy133.github.com/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_3.png"
+    }
+  },
+  "description": "How to make change over time / time transect maps for Archaeological science"
+}
+</script>
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+  <title>How-to: Simple &#39;change over time&#39; maps in R | Academic</title>
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="40524efc780c2c8844adba8e43f37407" >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.min.8988fb2a4bba758785868cfcb5244555.js"></script>
+
+  
+
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="Search...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container-xl">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/">Academic</a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/">Academic</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#about"><span>Home</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#posts"><span>Posts</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#projects"><span>Projects</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#talks"><span>Talks</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#featured"><span>Publications</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#contact"><span>Contact</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+      
+      
+        
+      
+
+      
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      
+      <li class="nav-item dropdown theme-dropdown">
+        <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Display preferences">
+          <i class="fas fa-moon" aria-hidden="true"></i>
+        </a>
+        <div class="dropdown-menu">
+          <a href="#" class="dropdown-item js-set-theme-light">
+            <span>Light</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-dark">
+            <span>Dark</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-auto">
+            <span>Automatic</span>
+          </a>
+        </div>
+      </li>
+      
+
+      
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  </div>
+
+  <div class="page-body">
+    <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1>How-to: Simple &#39;change over time&#39; maps in R</h1>
+
+  
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    2017-528-28
+  </span>
+  
+
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    4 min read
+  </span>
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+    
+
+
+
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      <p>In Archaeology, or other disciplines that looking through deep time, you often want to represent change through time. A simple example of this, is representing the location different archaeological sites through different cultural periods.</p>
+<p>I have had an issue quite a few times during my B.Sc., M.Sc. and now in my P.hD., which is how to quickly make a series of &lsquo;semi&rsquo; good-looking maps, that simply represent the locations of different sites over time.</p>
+<p>Many people use fancy programs like <a href="http://www.qgis.org/en/site/" target="_blank" rel="noopener">qGIS</a> to include terrain and other details, but often these tools (although powerful) are unwieldy to use and take a long time to get familiar with before producing something you are looking for. Although <a href="http://maps.google.com/" target="_blank" rel="noopener">Google Maps</a> is another alternative - such as through <a href="http://drive.google.com/" target="_blank" rel="noopener">Google Drive&rsquo;s</a> Fusion tables, often I find this still does not look as professional as those you see in academic publications.</p>
+<p>The programming language I am most familiar with currently is <a href="https://www.r-project.org/" target="_blank" rel="noopener">R</a>, and although this also has a learning-curve, it is not too hard to copy and paste code into something like <a href="https://www.rstudio.com/" target="_blank" rel="noopener">R-Studio</a> and quickly get some output. Furthermore, for scientists, R is one of the best languages to go to for data analysis and manipulating data (as well as getting pretty plots).</p>
+<p>Googling &ldquo;maps in R&rdquo; show many posts on how to do just that. However when I have tried this multiple times in the past, the many tutorials were either out-of-date, using packages that were even more out of date (one I used a year ago still used a map that had the Soviet Union!) and often these tutorials did not just give you an example of simply placing points on a map!</p>
+<p>The closet tutorial I found was from here:  <a href="https://www.r-bloggers.com/world-map-panel-plots-with-ggplot2-2-0-ggalt/" target="_blank" rel="noopener">https://www.r-bloggers.com/world-map-panel-plots-with-ggplot2-2-0-ggalt/</a>, yet this was still doing much more than I actually needed.</p>
+<p>Here, I will document the simplest solution I have found, based on the above, requiring only a table of sites with metadata including &lsquo;lat:lon&rsquo; coordinates (in the form of decimals, as you would get from Google Maps), the base install of R, and the (arguably) best looking and most popular plotting package <a href="http://ggplot2.org/" target="_blank" rel="noopener">ggplot2</a>,</p>
+<p>For this example, I will use the coordinates of the places I have previously studied in and save this as a .tsv (tab separated) file :</p>
+<table>
+<thead>
+<tr>
+<th>City</th>
+<th>Lat</th>
+<th>Long</th>
+<th>PeriodYork</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>York</td>
+<td>53.943540</td>
+<td>-1.061194</td>
+<td>B.Sc.</td>
+</tr>
+<tr>
+<td>Tübingen</td>
+<td>48.518484</td>
+<td>9.058082</td>
+<td>M.Sc.</td>
+</tr>
+<tr>
+<td>Jena</td>
+<td>50.903443</td>
+<td>50.903443</td>
+<td>Ph.D.</td>
+</tr>
+</tbody>
+</table>
+<p>I then ran the following R commands (in R v3.2.3):</p>
+<pre><code class="language-Rscript">##Load library ggplot2 (to install: install.packages(&quot;ggplot2&quot;), and choose your closest server
+library(ggplot2)
+##Set your working directory
+setwd(&quot;~/Downloads&quot;)
+##Load the world map from within ggplot2 and remove antarctica
+##(you can leave the removal of a country out, or add more countries with a list)
+world &lt;- map_data(&quot;world&quot;)
+world &lt;- world[world$region != &quot;Antarctica&quot;,]
+
+##Load your data
+dat &lt;- read.csv(&quot;city_coords.tsv&quot;, sep=&quot;\t&quot;, header=TRUE)
+
+##Here you load your ggplot object into a variable
+gg &lt;- ggplot()
+
+##Here you format your world map, line colour, object fill, and line size
+##and transparency
+gg &lt;- gg + geom_map(data=world, map=world,
+aes(x=long, y=lat, map_id=region),
+color=&quot;white&quot;, fill=&quot;#7f7f7f&quot;, size=0.05, alpha=1/4)
+
+##Here you apply your points you wish to project onto the map,
+##in this case automatically coloured by another variable (Period).
+##You can define the colours you wish of each period by adding
+##+ scale_color_manual(values=c(&quot;#377eb8&quot;, &quot;#984ea3&quot;, &quot;#4daf4a&quot;))
+##after the geom_point close bracket. Each RGB colour represents the
+##colour of each entry in the 'Period' column, in alphabetical order.
+gg &lt;- gg + geom_point(data=dat,
+aes(x=Long, y=Lat, color=Period),
+size=1)
+
+##Here you can remove the legend, look into ggplot2's theme() variable
+##to remove other things like tick marks etc.
+gg &lt;- gg + theme(legend.position=&quot;none&quot;)
+
+##Here you can 'crop' your picture to a region you are interested in,
+##and apply this in the decimal coordinate system as with your points.
+##You will have to play around with this a lot depending on what you
+##want to crop out, as how this displayed depends on your plot window size
+##(draggable in R)
+longlimits &lt;- c(-10, 20)
+latlimits &lt;- c(40, 60)
+gg &lt;- gg + coord_cartesian(xlim = longlimits, ylim = latlimits)
+
+#Open the final image, saying you want a column with each time period on
+##each row. To make horizontal you switch the Period with the full stop.
+gg + facet_grid(Period ~ .)
+
+##Adapted from:
+## https://www.r-bloggers.com/world-map-panel-plots-with-ggplot2-2-0-ggalt/
+</code></pre>
+<p>And you will get something like the following output (following some resizing of the window):</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/images/2017-05-28_2.png" alt="Example time series map from R and ggplot2" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>Once you&rsquo;ve got the image you like, you can then save in a variety of formats by adding the R functions <code>svg(&quot;my_map.svg&quot;, width=5, height=10)</code> or <code>png(&quot;my_map.png&quot;, width=50, height=100)</code> prior the final command and putting <code>dev.off()</code> after the last command. The image should then be saved in your &lsquo;working directory&rsquo; set at the beginning.</p>
+<p>Based on that basic outline, you can look into the ggplot2 for further modifications (point shapes, colouring by certain continuous values etc.)</p>
+
+    </div>
+
+    
+
+
+
+
+
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tag/r/">r</a>
+  
+  <a class="badge badge-light" href="/tag/how-to/">how-to</a>
+  
+  <a class="badge badge-light" href="/tag/maps/">maps</a>
+  
+</div>
+
+
+
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=https://jfy133.github.com/post/2017-05-28-maps-in-r/&amp;text=How-to:%20Simple%20&amp;#39;change%20over%20time&amp;#39;%20maps%20in%20R" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=https://jfy133.github.com/post/2017-05-28-maps-in-r/&amp;t=How-to:%20Simple%20&amp;#39;change%20over%20time&amp;#39;%20maps%20in%20R" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=How-to:%20Simple%20&amp;#39;change%20over%20time&amp;#39;%20maps%20in%20R&amp;body=https://jfy133.github.com/post/2017-05-28-maps-in-r/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=https://jfy133.github.com/post/2017-05-28-maps-in-r/&amp;title=How-to:%20Simple%20&amp;#39;change%20over%20time&amp;#39;%20maps%20in%20R" target="_blank" rel="noopener" class="share-btn-linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="whatsapp://send?text=How-to:%20Simple%20&amp;#39;change%20over%20time&amp;#39;%20maps%20in%20R%20https://jfy133.github.com/post/2017-05-28-maps-in-r/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=https://jfy133.github.com/post/2017-05-28-maps-in-r/&amp;title=How-to:%20Simple%20&amp;#39;change%20over%20time&amp;#39;%20maps%20in%20R" target="_blank" rel="noopener" class="share-btn-weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <a href="https://jfy133.github.com/"><img class="avatar mr-3 avatar-circle" src="/authors/admin/avatar_hu33d8f2710ea4928d295bd08cdc05f6eb_119776_270x270_fill_q75_lanczos_center.jpg" alt="James A. Fellows Yates"></a>
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="https://jfy133.github.com/">James A. Fellows Yates</a></h5>
+      <h6 class="card-subtitle">Bioinformatician and Biomolecular Archaeologist</h6>
+      <p class="card-text">My research interests focus on biomolecular archaeology, ancient DNA, metagenomics and bioinformatics</p>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="/#contact" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://twitter.com/jfy133" target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/jfy133" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://scholar.google.com/citations?user=5Wy_JDgAAAAJ&amp;hl=en" target="_blank" rel="noopener">
+        <i class="ai ai-google-scholar"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://orcid.org/0000-0001-5585-6277" target="_blank" rel="noopener">
+        <i class="ai ai-orcid"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.linkedin.com/in/james-fellows-yates-999859179/" target="_blank" rel="noopener">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://registry.jsonresume.org/jfy133" target="_blank" rel="noopener">
+        <i class="ai ai-cv"></i>
+      </a>
+    </li>
+  
+</ul>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <div class="article-widget content-widget-hr">
+    <h3>Related</h3>
+    <ul>
+      
+      <li><a href="/post/2019-05-03-tidy-popgen-pca-plotting-in-r/">&#39;Tidy&#39; Pop-Gen PCA plotting in R</a></li>
+      
+    </ul>
+  </div>
+  
+
+
+
+
+
+  </div>
+</article>
+  </div>
+
+  <div class="page-footer">
+    
+    
+    <div class="container">
+      <footer class="site-footer">
+
+  
+
+
+
+  
+
+  
+
+  
+  <p class="powered-by">
+    © 2021 James A. Fellows Yates
+  </p>
+  
+
+  
+  
+
+
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      Published with <a href="https://wowchemy.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Wowchemy</a> — the free, <a href="https://github.com/wowchemy/wowchemy-hugo-modules" target="_blank" rel="noopener">open source</a> website builder that empowers creators.
+    
+  </p>
+</footer>
+
+    </div>
+    
+  </div>
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      
+
+    
+    <script src="/js/vendor-bundle.min.b73dfaac3b6499dc997741748a7c3fe2.js"></script>
+
+    
+    
+    
+      
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      
+
+      
+      
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/highlight.min.js" integrity="sha512-TDKKr+IvoqZnPzc3l35hdjpHD0m+b2EC2SrLEgKDRWpxf2rFCxemkgvJ5kfU48ip+Y+m2XVKyOCD85ybtlZDmw==" crossorigin="anonymous"></script>
+        
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/r.min.js" crossorigin="anonymous"></script>
+        
+      
+
+    
+
+    
+    
+    
+
+    
+    
+
+    
+    
+    
+      
+      <script id="search-hit-fuse-template" type="text/x-template">
+        <div class="search-hit" id="summary-{{key}}">
+          <div class="search-hit-content">
+            <div class="search-hit-name">
+              <a href="{{relpermalink}}">{{title}}</a>
+              <div class="article-metadata search-hit-type">{{type}}</div>
+              <p class="search-hit-description">{{snippet}}</p>
+            </div>
+          </div>
+        </div>
+      </script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+      
+    
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+      
+      
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+      
+      
+    
+    
+    <script src="/en/js/wowchemy.min.d68ecd57c0ec1f1f61d65fd568f1c3a0.js"></script>
+
+    
+
+
+
+
+
+
+</body>
+</html>

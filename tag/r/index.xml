@@ -14,9 +14,9 @@
     
     <item>
       <title>&#39;Tidy&#39; Pop-Gen PCA plotting in R</title>
-      <link>https://jfy133.github.com/post/2019-05-03-tidy-popgen-pca-plotting-in-r/2019-05-03-tidy-popgen-pca-plotting-in-r/</link>
+      <link>https://jfy133.github.com/post/2019-05-03-tidy-popgen-pca-plotting-in-r/</link>
       <pubDate>Fri, 03 May 2019 00:00:00 +0000</pubDate>
-      <guid>https://jfy133.github.com/post/2019-05-03-tidy-popgen-pca-plotting-in-r/2019-05-03-tidy-popgen-pca-plotting-in-r/</guid>
+      <guid>https://jfy133.github.com/post/2019-05-03-tidy-popgen-pca-plotting-in-r/</guid>
       <description>&lt;p&gt;Many people in the human population-genetics groups in my department at MPI-SHH use a propetiary Mac specific program to make their figures of PCAs (principle component analysis). Some of the members of these groups however do not have Macs and were struggling to recreate some of the plots their collegues were making.&lt;/p&gt;
 &lt;p&gt;In response, I wrote a markdown document describing how you would recreate a PCA from a &lt;a href=&#34;https://doi.org/10.1038/s41467-018-07483-5&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;recent paper&lt;/a&gt; from my friend &lt;a href=&#34;https://github.com/TCLamnidis&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Thiseas Lamnidis&lt;/a&gt; but in R.&lt;/p&gt;
 &lt;p&gt;This tutorial is released under the open CC-BY-SA 4 license and can be viewed by anyone at the following link: &lt;a href=&#34;https://github.com/jfy133/Tidy_PopGen_PCA_Plotting&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/jfy133/Tidy_PopGen_PCA_Plotting&lt;/a&gt;.&lt;/p&gt;
@@ -47,9 +47,9 @@
     
     <item>
       <title>How-to: Simple &#39;change over time&#39; maps in R</title>
-      <link>https://jfy133.github.com/post/2017-05-28-maps-in-r/2017-05-28-maps-in-r/</link>
+      <link>https://jfy133.github.com/post/2017-05-28-maps-in-r/</link>
       <pubDate>Sun, 28 May 2017 00:00:00 +0000</pubDate>
-      <guid>https://jfy133.github.com/post/2017-05-28-maps-in-r/2017-05-28-maps-in-r/</guid>
+      <guid>https://jfy133.github.com/post/2017-05-28-maps-in-r/</guid>
       <description>&lt;p&gt;In Archaeology, or other disciplines that looking through deep time, you often want to represent change through time. A simple example of this, is representing the location different archaeological sites through different cultural periods.&lt;/p&gt;
 &lt;p&gt;I have had an issue quite a few times during my B.Sc., M.Sc. and now in my P.hD., which is how to quickly make a series of &amp;lsquo;semi&amp;rsquo; good-looking maps, that simply represent the locations of different sites over time.&lt;/p&gt;
 &lt;p&gt;Many people use fancy programs like &lt;a href=&#34;http://www.qgis.org/en/site/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;qGIS&lt;/a&gt; to include terrain and other details, but often these tools (although powerful) are unwieldy to use and take a long time to get familiar with before producing something you are looking for. Although &lt;a href=&#34;http://maps.google.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Google Maps&lt;/a&gt; is another alternative - such as through &lt;a href=&#34;http://drive.google.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Google Drive&amp;rsquo;s&lt;/a&gt; Fusion tables, often I find this still does not look as professional as those you see in academic publications.&lt;/p&gt;

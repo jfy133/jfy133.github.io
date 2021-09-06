@@ -14,9 +14,9 @@
     
     <item>
       <title>Gentle introduction to nf-core/eager</title>
-      <link>https://jfy133.github.com/post/2020-03-17-nfcore-eager-tutorial/2020-03-17-nfcore-eager-tutorial/</link>
+      <link>https://jfy133.github.com/post/2020-03-17-nfcore-eager-tutorial/</link>
       <pubDate>Tue, 17 Mar 2020 00:00:00 +0000</pubDate>
-      <guid>https://jfy133.github.com/post/2020-03-17-nfcore-eager-tutorial/2020-03-17-nfcore-eager-tutorial/</guid>
+      <guid>https://jfy133.github.com/post/2020-03-17-nfcore-eager-tutorial/</guid>
       <description>&lt;p&gt;I have written a tutorial in the form of a slideshow, which step-by-step
 introduces a new user to &lt;a href=&#34;https://nf-co.re/eager&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;nf-core/eager&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;nf-core/eager is a reproducible and portable pipeline for pre-processing and performing standard ancient DNA
@@ -28,9 +28,9 @@ screening analysis.&lt;/p&gt;
     
     <item>
       <title>&#39;Tidy&#39; Pop-Gen PCA plotting in R</title>
-      <link>https://jfy133.github.com/post/2019-05-03-tidy-popgen-pca-plotting-in-r/2019-05-03-tidy-popgen-pca-plotting-in-r/</link>
+      <link>https://jfy133.github.com/post/2019-05-03-tidy-popgen-pca-plotting-in-r/</link>
       <pubDate>Fri, 03 May 2019 00:00:00 +0000</pubDate>
-      <guid>https://jfy133.github.com/post/2019-05-03-tidy-popgen-pca-plotting-in-r/2019-05-03-tidy-popgen-pca-plotting-in-r/</guid>
+      <guid>https://jfy133.github.com/post/2019-05-03-tidy-popgen-pca-plotting-in-r/</guid>
       <description>&lt;p&gt;Many people in the human population-genetics groups in my department at MPI-SHH use a propetiary Mac specific program to make their figures of PCAs (principle component analysis). Some of the members of these groups however do not have Macs and were struggling to recreate some of the plots their collegues were making.&lt;/p&gt;
 &lt;p&gt;In response, I wrote a markdown document describing how you would recreate a PCA from a &lt;a href=&#34;https://doi.org/10.1038/s41467-018-07483-5&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;recent paper&lt;/a&gt; from my friend &lt;a href=&#34;https://github.com/TCLamnidis&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Thiseas Lamnidis&lt;/a&gt; but in R.&lt;/p&gt;
 &lt;p&gt;This tutorial is released under the open CC-BY-SA 4 license and can be viewed by anyone at the following link: &lt;a href=&#34;https://github.com/jfy133/Tidy_PopGen_PCA_Plotting&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/jfy133/Tidy_PopGen_PCA_Plotting&lt;/a&gt;.&lt;/p&gt;
@@ -61,9 +61,9 @@ screening analysis.&lt;/p&gt;
     
     <item>
       <title>Updating a Github Pages Theme Through a Repo Merge</title>
-      <link>https://jfy133.github.com/post/2017-10-08-updating-github-pages-theme/2017-10-08-updating-github-pages-theme/</link>
+      <link>https://jfy133.github.com/post/2017-10-08-updating-github-pages-theme/</link>
       <pubDate>Sun, 08 Oct 2017 00:00:00 +0000</pubDate>
-      <guid>https://jfy133.github.com/post/2017-10-08-updating-github-pages-theme/2017-10-08-updating-github-pages-theme/</guid>
+      <guid>https://jfy133.github.com/post/2017-10-08-updating-github-pages-theme/</guid>
       <description>&lt;p&gt;I am new to Git and Github, and so I am still very much learning on the fly.
 Today I noticed the original repository for the theme of this website had added
 updates, so I thought to apply them to my own repository.&lt;/p&gt;
@@ -122,9 +122,9 @@ the merge conflict, for example:&lt;/li&gt;
     
     <item>
       <title>Sequin Submission to Genbank Tutorial</title>
-      <link>https://jfy133.github.com/post/2017-08-03-sequin-genbank-submission/2017-08-03-sequin-genbank-submission/</link>
+      <link>https://jfy133.github.com/post/2017-08-03-sequin-genbank-submission/</link>
       <pubDate>Thu, 03 Aug 2017 00:00:00 +0000</pubDate>
-      <guid>https://jfy133.github.com/post/2017-08-03-sequin-genbank-submission/2017-08-03-sequin-genbank-submission/</guid>
+      <guid>https://jfy133.github.com/post/2017-08-03-sequin-genbank-submission/</guid>
       <description>&lt;p&gt;As I came to the end of my M.Sc. and writing the corresponding journal article,
 one thing I was aware of was that all previous papers on woolly mammoth
 mitchondrial genomes to NCBI&amp;rsquo;s GenBank database. To continue with this

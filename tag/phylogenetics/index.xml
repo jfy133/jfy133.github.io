@@ -14,9 +14,9 @@
     
     <item>
       <title>How-to: cancel a MrBayes run early</title>
-      <link>https://jfy133.github.com/post/2017-05-28-cancel-mybayes-early/2017-05-28-cancel-mybayes-early/</link>
+      <link>https://jfy133.github.com/post/2017-05-28-cancel-mybayes-early/</link>
       <pubDate>Sun, 28 May 2017 00:00:00 +0000</pubDate>
-      <guid>https://jfy133.github.com/post/2017-05-28-cancel-mybayes-early/2017-05-28-cancel-mybayes-early/</guid>
+      <guid>https://jfy133.github.com/post/2017-05-28-cancel-mybayes-early/</guid>
       <description>&lt;p&gt;During my M.Sc. thesis I started to use the Bayesian phylogenetic MrBayes on clusters that do not make it feasible to keep open  a terminal window. This meant I had to use ‘&lt;a href=&#34;http://mrbayes.sourceforge.net/wiki/index.php/FAQ_3.2&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;batch mode&lt;/a&gt;’, meaning I could only follow the status of the MrBayes run through the log files.&lt;/p&gt;
 &lt;p&gt;One issue I found when using MrBayes is that it is quite slow, so when I found my MCMC trace reached stability very early on in the chain, I wanted to stop the chain early, requiring me to force cancel the run. This meant that the data was not loaded in the program and I could not run the ‘sump’ or ‘sumt’ commands in MrBayes.&lt;/p&gt;
 &lt;p&gt;I googled how to do cancel a MrBayes run early and found a couple of links (such as &lt;a href=&#34;https://www.biostars.org/p/139267/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt; and &lt;a href=&#34;https://sourceforge.net/p/mrbayes/mailman/mrbayes-users/thread/b392349a0811081442j4480854fqc462424a6381dd@mail.gmail.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;). Although easy to do, neither explanations were particularly explicit in how finish the chain early and continue the analysis.&lt;/p&gt;

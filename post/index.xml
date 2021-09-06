@@ -99,9 +99,9 @@
     
     <item>
       <title>All Possible NCBI Taxonomy Ranks</title>
-      <link>https://jfy133.github.com/post/2020-07-23-all-ncbi-taxonomy-ranks/2020-07-23-all-ncbi-taxonomy-ranks/</link>
+      <link>https://jfy133.github.com/post/2020-07-23-all-ncbi-taxonomy-ranks/</link>
       <pubDate>Tue, 17 Mar 2020 00:00:00 +0000</pubDate>
-      <guid>https://jfy133.github.com/post/2020-07-23-all-ncbi-taxonomy-ranks/2020-07-23-all-ncbi-taxonomy-ranks/</guid>
+      <guid>https://jfy133.github.com/post/2020-07-23-all-ncbi-taxonomy-ranks/</guid>
       <description>&lt;p&gt;It was bothering me that nowhere on the NCBI website are all possible taxonomic
 &amp;lsquo;ranks&amp;rsquo; actually described.&lt;/p&gt;
 &lt;p&gt;I eventually decided to go back to basics and literally download the raw data
@@ -194,9 +194,9 @@ technically analogous e.g. strain vs varietas)&lt;/p&gt;
     
     <item>
       <title>Gentle introduction to nf-core/eager</title>
-      <link>https://jfy133.github.com/post/2020-03-17-nfcore-eager-tutorial/2020-03-17-nfcore-eager-tutorial/</link>
+      <link>https://jfy133.github.com/post/2020-03-17-nfcore-eager-tutorial/</link>
       <pubDate>Tue, 17 Mar 2020 00:00:00 +0000</pubDate>
-      <guid>https://jfy133.github.com/post/2020-03-17-nfcore-eager-tutorial/2020-03-17-nfcore-eager-tutorial/</guid>
+      <guid>https://jfy133.github.com/post/2020-03-17-nfcore-eager-tutorial/</guid>
       <description>&lt;p&gt;I have written a tutorial in the form of a slideshow, which step-by-step
 introduces a new user to &lt;a href=&#34;https://nf-co.re/eager&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;nf-core/eager&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;nf-core/eager is a reproducible and portable pipeline for pre-processing and performing standard ancient DNA
@@ -208,9 +208,9 @@ screening analysis.&lt;/p&gt;
     
     <item>
       <title>pvclust Node Values In ggtree</title>
-      <link>https://jfy133.github.com/post/2019-06-18-pvclust-nodevalues-in-ggtree/2019-06-18-pvclust-nodevalues-in-ggtree/</link>
+      <link>https://jfy133.github.com/post/2019-06-18-pvclust-nodevalues-in-ggtree/</link>
       <pubDate>Tue, 18 Jun 2019 00:00:00 +0000</pubDate>
-      <guid>https://jfy133.github.com/post/2019-06-18-pvclust-nodevalues-in-ggtree/2019-06-18-pvclust-nodevalues-in-ggtree/</guid>
+      <guid>https://jfy133.github.com/post/2019-06-18-pvclust-nodevalues-in-ggtree/</guid>
       <description>&lt;p&gt;I recently was using the R package &lt;a href=&#34;http://stat.sys.i.kyoto-u.ac.jp/prog/pvclust/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;code&gt;pvclust&lt;/code&gt;&lt;/a&gt; to test the
 &amp;lsquo;robusticity&amp;rsquo; of clusters in a microbiome-related clustering analysis. While &lt;code&gt;pvclust&lt;/code&gt; provides it&amp;rsquo;s own plots via &lt;code&gt;plot()&lt;/code&gt;  on a &lt;code&gt;pvclust&lt;/code&gt; object, this plots the dendrogram in  base R. For readability and customisability reasons I prefer using the packages &lt;code&gt;ggplot2&lt;/code&gt; and &lt;code&gt;ggtree&lt;/code&gt; for making my figures. However, I was having a hard time to extract the node uncertainty values from the &lt;code&gt;pvclust&lt;/code&gt; object  and integrate them into a generic R &lt;code&gt;phylo&lt;/code&gt; object for plotting the dendrogram in ggtree.&lt;/p&gt;
 &lt;p&gt;Fortunately, a bit of googling (a couple of days&amp;hellip;) showed me someone else had already solved the problem of transferring additional &lt;code&gt;hclust&lt;/code&gt; information into a &lt;code&gt;phylo&lt;/code&gt; object but in a different context. The &lt;code&gt;fastbap&lt;/code&gt; package has the function &lt;a href=&#34;https://github.com/gtonkinhill/fastbaps/blob/master/R/as.phylo.hclust.node.attributes.R&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;code&gt;as.phylo.hclust.node.attributes()&lt;/code&gt;&lt;/a&gt;&lt;code&gt;which essentially does what I needed to do - i.e. when calculating the node numbers from each merge event, also store with the same node number the corresponding attribute, or in this case,&lt;/code&gt;pvclust` AU value.&lt;/p&gt;
@@ -284,9 +284,9 @@ hclust_boot_phylo &amp;lt;- as.phylo.pvclust.node.attributes(hclust_boot$hclust,
     
     <item>
       <title>&#39;Tidy&#39; Pop-Gen PCA plotting in R</title>
-      <link>https://jfy133.github.com/post/2019-05-03-tidy-popgen-pca-plotting-in-r/2019-05-03-tidy-popgen-pca-plotting-in-r/</link>
+      <link>https://jfy133.github.com/post/2019-05-03-tidy-popgen-pca-plotting-in-r/</link>
       <pubDate>Fri, 03 May 2019 00:00:00 +0000</pubDate>
-      <guid>https://jfy133.github.com/post/2019-05-03-tidy-popgen-pca-plotting-in-r/2019-05-03-tidy-popgen-pca-plotting-in-r/</guid>
+      <guid>https://jfy133.github.com/post/2019-05-03-tidy-popgen-pca-plotting-in-r/</guid>
       <description>&lt;p&gt;Many people in the human population-genetics groups in my department at MPI-SHH use a propetiary Mac specific program to make their figures of PCAs (principle component analysis). Some of the members of these groups however do not have Macs and were struggling to recreate some of the plots their collegues were making.&lt;/p&gt;
 &lt;p&gt;In response, I wrote a markdown document describing how you would recreate a PCA from a &lt;a href=&#34;https://doi.org/10.1038/s41467-018-07483-5&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;recent paper&lt;/a&gt; from my friend &lt;a href=&#34;https://github.com/TCLamnidis&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Thiseas Lamnidis&lt;/a&gt; but in R.&lt;/p&gt;
 &lt;p&gt;This tutorial is released under the open CC-BY-SA 4 license and can be viewed by anyone at the following link: &lt;a href=&#34;https://github.com/jfy133/Tidy_PopGen_PCA_Plotting&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/jfy133/Tidy_PopGen_PCA_Plotting&lt;/a&gt;.&lt;/p&gt;
@@ -317,9 +317,9 @@ hclust_boot_phylo &amp;lt;- as.phylo.pvclust.node.attributes(hclust_boot$hclust,
     
     <item>
       <title>Updating a Github Pages Theme Through a Repo Merge</title>
-      <link>https://jfy133.github.com/post/2017-10-08-updating-github-pages-theme/2017-10-08-updating-github-pages-theme/</link>
+      <link>https://jfy133.github.com/post/2017-10-08-updating-github-pages-theme/</link>
       <pubDate>Sun, 08 Oct 2017 00:00:00 +0000</pubDate>
-      <guid>https://jfy133.github.com/post/2017-10-08-updating-github-pages-theme/2017-10-08-updating-github-pages-theme/</guid>
+      <guid>https://jfy133.github.com/post/2017-10-08-updating-github-pages-theme/</guid>
       <description>&lt;p&gt;I am new to Git and Github, and so I am still very much learning on the fly.
 Today I noticed the original repository for the theme of this website had added
 updates, so I thought to apply them to my own repository.&lt;/p&gt;
@@ -378,9 +378,9 @@ the merge conflict, for example:&lt;/li&gt;
     
     <item>
       <title>Sequin Submission to Genbank Tutorial</title>
-      <link>https://jfy133.github.com/post/2017-08-03-sequin-genbank-submission/2017-08-03-sequin-genbank-submission/</link>
+      <link>https://jfy133.github.com/post/2017-08-03-sequin-genbank-submission/</link>
       <pubDate>Thu, 03 Aug 2017 00:00:00 +0000</pubDate>
-      <guid>https://jfy133.github.com/post/2017-08-03-sequin-genbank-submission/2017-08-03-sequin-genbank-submission/</guid>
+      <guid>https://jfy133.github.com/post/2017-08-03-sequin-genbank-submission/</guid>
       <description>&lt;p&gt;As I came to the end of my M.Sc. and writing the corresponding journal article,
 one thing I was aware of was that all previous papers on woolly mammoth
 mitchondrial genomes to NCBI&amp;rsquo;s GenBank database. To continue with this
@@ -832,9 +832,9 @@ the same address (you don&amp;rsquo;t need to do a resubmission or use sequin).&
     
     <item>
       <title>How-to: cancel a MrBayes run early</title>
-      <link>https://jfy133.github.com/post/2017-05-28-cancel-mybayes-early/2017-05-28-cancel-mybayes-early/</link>
+      <link>https://jfy133.github.com/post/2017-05-28-cancel-mybayes-early/</link>
       <pubDate>Sun, 28 May 2017 00:00:00 +0000</pubDate>
-      <guid>https://jfy133.github.com/post/2017-05-28-cancel-mybayes-early/2017-05-28-cancel-mybayes-early/</guid>
+      <guid>https://jfy133.github.com/post/2017-05-28-cancel-mybayes-early/</guid>
       <description>&lt;p&gt;During my M.Sc. thesis I started to use the Bayesian phylogenetic MrBayes on clusters that do not make it feasible to keep open  a terminal window. This meant I had to use ‘&lt;a href=&#34;http://mrbayes.sourceforge.net/wiki/index.php/FAQ_3.2&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;batch mode&lt;/a&gt;’, meaning I could only follow the status of the MrBayes run through the log files.&lt;/p&gt;
 &lt;p&gt;One issue I found when using MrBayes is that it is quite slow, so when I found my MCMC trace reached stability very early on in the chain, I wanted to stop the chain early, requiring me to force cancel the run. This meant that the data was not loaded in the program and I could not run the ‘sump’ or ‘sumt’ commands in MrBayes.&lt;/p&gt;
 &lt;p&gt;I googled how to do cancel a MrBayes run early and found a couple of links (such as &lt;a href=&#34;https://www.biostars.org/p/139267/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt; and &lt;a href=&#34;https://sourceforge.net/p/mrbayes/mailman/mrbayes-users/thread/b392349a0811081442j4480854fqc462424a6381dd@mail.gmail.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;). Although easy to do, neither explanations were particularly explicit in how finish the chain early and continue the analysis.&lt;/p&gt;
@@ -885,9 +885,9 @@ the same address (you don&amp;rsquo;t need to do a resubmission or use sequin).&
     
     <item>
       <title>How-to: Simple &#39;change over time&#39; maps in R</title>
-      <link>https://jfy133.github.com/post/2017-05-28-maps-in-r/2017-05-28-maps-in-r/</link>
+      <link>https://jfy133.github.com/post/2017-05-28-maps-in-r/</link>
       <pubDate>Sun, 28 May 2017 00:00:00 +0000</pubDate>
-      <guid>https://jfy133.github.com/post/2017-05-28-maps-in-r/2017-05-28-maps-in-r/</guid>
+      <guid>https://jfy133.github.com/post/2017-05-28-maps-in-r/</guid>
       <description>&lt;p&gt;In Archaeology, or other disciplines that looking through deep time, you often want to represent change through time. A simple example of this, is representing the location different archaeological sites through different cultural periods.&lt;/p&gt;
 &lt;p&gt;I have had an issue quite a few times during my B.Sc., M.Sc. and now in my P.hD., which is how to quickly make a series of &amp;lsquo;semi&amp;rsquo; good-looking maps, that simply represent the locations of different sites over time.&lt;/p&gt;
 &lt;p&gt;Many people use fancy programs like &lt;a href=&#34;http://www.qgis.org/en/site/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;qGIS&lt;/a&gt; to include terrain and other details, but often these tools (although powerful) are unwieldy to use and take a long time to get familiar with before producing something you are looking for. Although &lt;a href=&#34;http://maps.google.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Google Maps&lt;/a&gt; is another alternative - such as through &lt;a href=&#34;http://drive.google.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Google Drive&amp;rsquo;s&lt;/a&gt; Fusion tables, often I find this still does not look as professional as those you see in academic publications.&lt;/p&gt;

@@ -14,9 +14,9 @@
     
     <item>
       <title>Updating a Github Pages Theme Through a Repo Merge</title>
-      <link>https://jfy133.github.com/post/2017-10-08-updating-github-pages-theme/2017-10-08-updating-github-pages-theme/</link>
+      <link>https://jfy133.github.com/post/2017-10-08-updating-github-pages-theme/</link>
       <pubDate>Sun, 08 Oct 2017 00:00:00 +0000</pubDate>
-      <guid>https://jfy133.github.com/post/2017-10-08-updating-github-pages-theme/2017-10-08-updating-github-pages-theme/</guid>
+      <guid>https://jfy133.github.com/post/2017-10-08-updating-github-pages-theme/</guid>
       <description>&lt;p&gt;I am new to Git and Github, and so I am still very much learning on the fly.
 Today I noticed the original repository for the theme of this website had added
 updates, so I thought to apply them to my own repository.&lt;/p&gt;

@@ -1,0 +1,1742 @@
+<!DOCTYPE html><html lang="en-gb" >
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Wowchemy 5.3.0 for Hugo" />
+  
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="James A. Fellows Yates" />
+
+  
+  
+  
+    
+  
+  <meta name="description" content="How to submit ancient mitochondrial consensus sequences to Genbank with Sequin" />
+
+  
+  <link rel="alternate" hreflang="en-gb" href="https://jfy133.github.com/post/2017-08-03-sequin-genbank-submission/" />
+
+  
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+
+  
+  
+  
+    <meta name="theme-color" content="#1565c0" />
+  
+
+  
+  
+
+  
+
+  <link rel="stylesheet" href="/css/vendor-bundle.min.f1ecf783c14edc00c9320c205831ad8e.css" media="print" onload="this.media='all'">
+
+  
+  
+  
+    
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.0/css/academicons.min.css" integrity="sha512-W4yqoT1+8NLkinBLBZko+dFB2ZbHsYLDdr50VElllRcNt2Q4/GSs6u71UHKxB7S6JEMCp5Ve4xjh3eGQl/HRvg==" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+    
+    
+    
+      
+      
+    
+    
+    
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/github.min.css" crossorigin="anonymous" title="hl-light" media="print" onload="this.media='all'">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" media="print" onload="this.media='all'" disabled>
+        
+      
+    
+
+    
+    
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+        
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+    
+      
+      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" media="print" onload="this.media='all'">
+    
+  
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.481af39c39ffd87b2d14f39943e7c723.css" />
+
+  
+
+
+
+  
+
+  
+
+  
+
+
+
+
+  
+  
+  
+
+  
+
+  
+    <link rel="manifest" href="/manifest.webmanifest" />
+  
+
+  <link rel="icon" type="image/png" href="/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_3.png" />
+  <link rel="apple-touch-icon" type="image/png" href="/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_180x180_fill_lanczos_center_3.png" />
+
+  <link rel="canonical" href="https://jfy133.github.com/post/2017-08-03-sequin-genbank-submission/" />
+
+  
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary" />
+  
+  <meta property="og:site_name" content="Academic" />
+  <meta property="og:url" content="https://jfy133.github.com/post/2017-08-03-sequin-genbank-submission/" />
+  <meta property="og:title" content="Sequin Submission to Genbank Tutorial | Academic" />
+  <meta property="og:description" content="How to submit ancient mitochondrial consensus sequences to Genbank with Sequin" /><meta property="og:image" content="https://jfy133.github.com/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png" />
+    <meta property="twitter:image" content="https://jfy133.github.com/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png" /><meta property="og:locale" content="en-gb" />
+  
+    
+      <meta
+        property="article:published_time"
+        content="2017-08-03T00:00:00&#43;00:00"
+      />
+    
+    <meta property="article:modified_time" content="2017-08-03T00:00:00&#43;00:00">
+  
+
+  
+
+
+    
+
+
+
+
+
+
+  
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://jfy133.github.com/post/2017-08-03-sequin-genbank-submission/"
+  },
+  "headline": "Sequin Submission to Genbank Tutorial",
+  
+  "datePublished": "2017-08-03T00:00:00Z",
+  "dateModified": "2017-08-03T00:00:00Z",
+  
+  "author": {
+    "@type": "Person",
+    "name": "James A. Fellows Yates"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "Academic",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://jfy133.github.com/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_3.png"
+    }
+  },
+  "description": "How to submit ancient mitochondrial consensus sequences to Genbank with Sequin"
+}
+</script>
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+  <title>Sequin Submission to Genbank Tutorial | Academic</title>
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="5cfb1623a6d629aa3b35ebed9dafebbd" >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.min.8988fb2a4bba758785868cfcb5244555.js"></script>
+
+  
+
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="Search...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container-xl">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/">Academic</a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/">Academic</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#about"><span>Home</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#posts"><span>Posts</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#projects"><span>Projects</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#talks"><span>Talks</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#featured"><span>Publications</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#contact"><span>Contact</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+      
+      
+        
+      
+
+      
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      
+      <li class="nav-item dropdown theme-dropdown">
+        <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Display preferences">
+          <i class="fas fa-moon" aria-hidden="true"></i>
+        </a>
+        <div class="dropdown-menu">
+          <a href="#" class="dropdown-item js-set-theme-light">
+            <span>Light</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-dark">
+            <span>Dark</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-auto">
+            <span>Automatic</span>
+          </a>
+        </div>
+      </li>
+      
+
+      
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  </div>
+
+  <div class="page-body">
+    <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1>Sequin Submission to Genbank Tutorial</h1>
+
+  
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    2017-83-03
+  </span>
+  
+
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    5 min read
+  </span>
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+    
+
+
+
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      <p>As I came to the end of my M.Sc. and writing the corresponding journal article,
+one thing I was aware of was that all previous papers on woolly mammoth
+mitchondrial genomes to NCBI&rsquo;s GenBank database. To continue with this
+established &lsquo;tradition&rsquo;, I decided to investigate how to do this. Worringly, most people I spoke to didn&rsquo;t have very positive views on this
+procdure, saying that it was complicated, error prone and badly documented and
+that it wasn&rsquo;t worth my time. In fact, with a bit of help from the authors of
+some of the previous papers and with NCBI itself, the overall task ended up
+being easier than expected (admittedly after a considerable bit of trial and
+error).</p>
+<p>Here, I describe the eventual steps that I did to (successfully!) annotate a
+set of mtGenomes and make a submission to GenBank. However, note that these
+instructions are only valid for this use-case, and would not be necessarily
+valid for other situations.</p>
+<p>In this case, we assume that you have multiple
+sequences of a species that already has an annotated reference sequence on
+GenBank. I use here the &lsquo;Krause&rsquo; reference (Accession: NC_007596.2) and my
+reconstructed mtGenomes.</p>
+<h1 id="preparation">Preparation</h1>
+<ol>
+<li>Download the program <code>Sequin</code> from <a href="https://www.ncbi.nlm.nih.gov/Sequin/" target="_blank" rel="noopener">here</a> (If running Ubuntu 16.04 might have to install libxp6 from the PPA <a href="https://bugs.launchpad.net/ubuntu/&#43;source/libxp/&#43;bug/1517884/comments/11" target="_blank" rel="noopener">here</a>).</li>
+<li>Download the reference sequence from Genbank in FASTA format and the FeatureTable format.</li>
+<li>Using a multisequence aligner tool like <a href="http://www.megasoftware.net/" target="_blank" rel="noopener">MEGA</a> or <a href="http://www.geneious.com/" target="_blank" rel="noopener">Geneious</a>, align your sequences to the reference, and export the file as a FASTA file (make sure to export gaps as Ns, and not &lsquo;-&rsquo; as in the documentation, and keep the reference sequence!).</li>
+<li>To save time later, you now want to change the FASTA headers for each sequnce to the NCBI format, adding as much information as you can using the &lsquo;modifiers&rsquo; listed <a href="https://www.ncbi.nlm.nih.gov/Sequin/modifiers.html" target="_blank" rel="noopener">here</a>. An example of one of my headers is as so:</li>
+</ol>
+<pre><code class="language-bash"> &gt;JK2760 [organism=Mammuthus primigenius] [country=Germany] [isolate=JK2760] Mammuthus primigenius isolate JK2760 mitochondrion, partial genome
+</code></pre>
+<p>For the reference sequence you should also add the tag <code>[acc=NC_007596.2]</code>.</p>
+<h1 id="using-sequin">Using Sequin</h1>
+<ol start="5">
+<li>Next we can start <code>Sequin</code>, select &lsquo;NCBI GenBank&rsquo; and &lsquo;Start new submission&rsquo;.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/images/1-load_sequin.png" alt="Load Sequin" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</li>
+<li>Set the release date of the data (for example if you want to release on the same day as your paper is published - note you can update this later) and add a tentative title for the study.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/images/2-submission_info_1.png" alt="Submission Information" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</li>
+<li>Set you name, phone and email (fax can be skipped).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/images/3-submission_info_2.png" alt="Submission Information" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</li>
+<li>Enter the names of the authors of the study.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/images/4-submission_info_3.png" alt="Submission Information" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</li>
+<li>Enter the submitting institution address (fax can be skipped).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/images/5-submission_info_4.png" alt="Submission Information" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</li>
+<li>Select the &lsquo;use normal submission dialog&rsquo; option.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/images/6-start_submission_dialog.png" alt="Start Submission" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</li>
+<li>Select &lsquo;Population Study&rsquo;, &lsquo;Alignment&rsquo; and &lsquo;Original submission&rsquo;.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/images/7-submission_type.png" alt="Submission Type" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</li>
+<li>Now you can import your FASTA alignment through the &lsquo;Import Alignment&rsquo; button and select the following options:</li>
+</ol>
+<ul>
+<li>Trim Ns at the end of sequences: yes.</li>
+<li>Specify molecule: &lsquo;Genomic DNA&rsquo; (apply to all).</li>
+<li>Specify topology: &lsquo;linear&rsquo; (apply to all).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/images/8-import_alignment.png" alt="Import" loading="lazy" data-zoomable /></div>
+  </div></figure>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/images/9-set_molecule_information.png" alt="Set Molecular" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</li>
+</ul>
+<ol start="13">
+<li>Select &lsquo;Illumina&rsquo;, &lsquo;assembled sequences&rsquo; and input your assembly program (in my case it is <code>bwa</code> and version &lsquo;0.7&rsquo;).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/images/10-set_sequencing_information.png" alt="Sequencing Info" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</li>
+<li>Next you can add various information like organisms, locations (e.g. here I selected mitochondrion) and genetic codes (to apply to all you can select the header). You can keep the genetic code as &lsquo;standard&rsquo; or change to &lsquo;Vertebrate Mitochondrial&rsquo;. Some of this will have already been imported based on your FASTA headers.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/images/11-add_sequence_metadata_1.png" alt="Seq metadata" loading="lazy" data-zoomable /></div>
+  </div></figure>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/images/12-add_sequence_metadata_2.png" alt="Seq metadata" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</li>
+<li>You can skip the protein step.</li>
+<li>You can also skip annotation (select &lsquo;none&rsquo;) and &lsquo;Continue to record viewer&rsquo;.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/images/13-skip_protein_annotation.png" alt="Skip" loading="lazy" data-zoomable /></div>
+  </div></figure>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/images/14-record_viewer.png" alt="Record viewer" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</li>
+<li>First, it is best to annotate any runs of Ns as sequencing gaps (as per advice from the NCBI helpdesk). You can do this by doing the following:</li>
+</ol>
+<ul>
+<li>In record viewer Go to Search Validate &gt; Validate.</li>
+<li>Double click on a &lsquo;run of Ns&rsquo; error.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/images/15-validation_window.png" alt="Validate" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</li>
+<li>In the sequence viewer, type in the start position (-1) in the &lsquo;Go to&rsquo; box.</li>
+<li>Then click and drag until all the Ns are selected.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/images/16-add_sequence_gap_1.png" alt="Sequence Gap" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</li>
+<li>Then go to Features &gt; Remaining Features &gt; misc_features and under the &lsquo;Properties&rsquo; and then &lsquo;Comment&rsquo; tab you can add &lsquo;sequencing gap, estimated length 119 bp&rsquo;.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/images/17-add_sequence_gap_2.png" alt="Sequence Gap" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</li>
+</ul>
+<ol start="18">
+<li>Once all of those are done, in the Record Viewer you need to select from the drop down menu the reference sequence (in this case NC_007596.2) and then File &gt; Open the Genbank (flat)file or the feature table. This should automatically load all the annotations of the original sequence, also &lsquo;importing&rsquo; features that in the latest version of Sequin fail due to conflicts (e.g. I could not manually make a <code>/trans_exep</code>, but when I imported it gives an error but keeps the feature).</li>
+<li>Finally in the Record Viewer you can go Edit &gt; Feature Propagate. This will copy over all of the annotations on the reference sequnce to your other sequences, but doing the correct DNA to amino acid translation.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/images/18-propagate_features.png" alt="Propagate" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</li>
+<li>You should now do another &lsquo;validate&rsquo; to find any errors. For example a couple of my translated amino acid sequences began with XXXXXX, so the <code>Sequin</code> couldn&rsquo;t find the start codon and thus failed. I just removed these feature entries (and informed NCBI staff).</li>
+<li>Once you have no failures, you can go in Record Viewer to &lsquo;File &gt; Prepare Submission&rsquo; and send the corresponding file to NCBI genbank as per the instructions. <a href="https://www.ncbi.nlm.nih.gov/books/NBK53709/#gbankquickstart.Submission_using_Sequin" target="_blank" rel="noopener">here</a>.</li>
+</ol>
+<p>Once done, after a few days you should recieve a message from the NCBI either with
+corrections to be made or a list of accession numbers, which will go live on
+the date you selected in Sequin.</p>
+<p>To update or to get the release date changed you can just email them again at
+the same address (you don&rsquo;t need to do a resubmission or use sequin).</p>
+
+    </div>
+
+    
+
+
+
+
+
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tag/bioinformatics/">bioinformatics</a>
+  
+  <a class="badge badge-light" href="/tag/ncbi/">ncbi</a>
+  
+  <a class="badge badge-light" href="/tag/tutorial/">tutorial</a>
+  
+</div>
+
+
+
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=https://jfy133.github.com/post/2017-08-03-sequin-genbank-submission/&amp;text=Sequin%20Submission%20to%20Genbank%20Tutorial" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=https://jfy133.github.com/post/2017-08-03-sequin-genbank-submission/&amp;t=Sequin%20Submission%20to%20Genbank%20Tutorial" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=Sequin%20Submission%20to%20Genbank%20Tutorial&amp;body=https://jfy133.github.com/post/2017-08-03-sequin-genbank-submission/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=https://jfy133.github.com/post/2017-08-03-sequin-genbank-submission/&amp;title=Sequin%20Submission%20to%20Genbank%20Tutorial" target="_blank" rel="noopener" class="share-btn-linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="whatsapp://send?text=Sequin%20Submission%20to%20Genbank%20Tutorial%20https://jfy133.github.com/post/2017-08-03-sequin-genbank-submission/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=https://jfy133.github.com/post/2017-08-03-sequin-genbank-submission/&amp;title=Sequin%20Submission%20to%20Genbank%20Tutorial" target="_blank" rel="noopener" class="share-btn-weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <a href="https://jfy133.github.com/"><img class="avatar mr-3 avatar-circle" src="/authors/admin/avatar_hu33d8f2710ea4928d295bd08cdc05f6eb_119776_270x270_fill_q75_lanczos_center.jpg" alt="James A. Fellows Yates"></a>
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="https://jfy133.github.com/">James A. Fellows Yates</a></h5>
+      <h6 class="card-subtitle">Bioinformatician and Biomolecular Archaeologist</h6>
+      <p class="card-text">My research interests focus on biomolecular archaeology, ancient DNA, metagenomics and bioinformatics</p>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="/#contact" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://twitter.com/jfy133" target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/jfy133" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://scholar.google.com/citations?user=5Wy_JDgAAAAJ&amp;hl=en" target="_blank" rel="noopener">
+        <i class="ai ai-google-scholar"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://orcid.org/0000-0001-5585-6277" target="_blank" rel="noopener">
+        <i class="ai ai-orcid"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.linkedin.com/in/james-fellows-yates-999859179/" target="_blank" rel="noopener">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://registry.jsonresume.org/jfy133" target="_blank" rel="noopener">
+        <i class="ai ai-cv"></i>
+      </a>
+    </li>
+  
+</ul>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <div class="article-widget content-widget-hr">
+    <h3>Related</h3>
+    <ul>
+      
+      <li><a href="/post/2020-07-23-all-ncbi-taxonomy-ranks/">All Possible NCBI Taxonomy Ranks</a></li>
+      
+      <li><a href="/post/2020-03-17-nfcore-eager-tutorial/">Gentle introduction to nf-core/eager</a></li>
+      
+      <li><a href="/post/2019-06-18-pvclust-nodevalues-in-ggtree/">pvclust Node Values In ggtree</a></li>
+      
+      <li><a href="/post/2019-05-03-tidy-popgen-pca-plotting-in-r/">&#39;Tidy&#39; Pop-Gen PCA plotting in R</a></li>
+      
+      <li><a href="/post/2017-10-08-updating-github-pages-theme/">Updating a Github Pages Theme Through a Repo Merge</a></li>
+      
+    </ul>
+  </div>
+  
+
+
+
+
+
+  </div>
+</article>
+  </div>
+
+  <div class="page-footer">
+    
+    
+    <div class="container">
+      <footer class="site-footer">
+
+  
+
+
+
+  
+
+  
+
+  
+  <p class="powered-by">
+    © 2021 James A. Fellows Yates
+  </p>
+  
+
+  
+  
+
+
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      Published with <a href="https://wowchemy.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Wowchemy</a> — the free, <a href="https://github.com/wowchemy/wowchemy-hugo-modules" target="_blank" rel="noopener">open source</a> website builder that empowers creators.
+    
+  </p>
+</footer>
+
+    </div>
+    
+  </div>
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      
+
+    
+    <script src="/js/vendor-bundle.min.b73dfaac3b6499dc997741748a7c3fe2.js"></script>
+
+    
+    
+    
+      
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      
+
+      
+      
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/highlight.min.js" integrity="sha512-TDKKr+IvoqZnPzc3l35hdjpHD0m+b2EC2SrLEgKDRWpxf2rFCxemkgvJ5kfU48ip+Y+m2XVKyOCD85ybtlZDmw==" crossorigin="anonymous"></script>
+        
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/r.min.js" crossorigin="anonymous"></script>
+        
+      
+
+    
+
+    
+    
+    
+
+    
+    
+
+    
+    
+    
+      
+      <script id="search-hit-fuse-template" type="text/x-template">
+        <div class="search-hit" id="summary-{{key}}">
+          <div class="search-hit-content">
+            <div class="search-hit-name">
+              <a href="{{relpermalink}}">{{title}}</a>
+              <div class="article-metadata search-hit-type">{{type}}</div>
+              <p class="search-hit-description">{{snippet}}</p>
+            </div>
+          </div>
+        </div>
+      </script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+      
+    
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+      
+      
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+      
+      
+    
+    
+    <script src="/en/js/wowchemy.min.d68ecd57c0ec1f1f61d65fd568f1c3a0.js"></script>
+
+    
+
+
+
+
+
+
+</body>
+</html>

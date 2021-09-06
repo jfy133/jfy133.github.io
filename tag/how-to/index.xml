@@ -14,9 +14,9 @@
     
     <item>
       <title>How-to: Simple &#39;change over time&#39; maps in R</title>
-      <link>https://jfy133.github.com/post/2017-05-28-maps-in-r/2017-05-28-maps-in-r/</link>
+      <link>https://jfy133.github.com/post/2017-05-28-maps-in-r/</link>
       <pubDate>Sun, 28 May 2017 00:00:00 +0000</pubDate>
-      <guid>https://jfy133.github.com/post/2017-05-28-maps-in-r/2017-05-28-maps-in-r/</guid>
+      <guid>https://jfy133.github.com/post/2017-05-28-maps-in-r/</guid>
       <description>&lt;p&gt;In Archaeology, or other disciplines that looking through deep time, you often want to represent change through time. A simple example of this, is representing the location different archaeological sites through different cultural periods.&lt;/p&gt;
 &lt;p&gt;I have had an issue quite a few times during my B.Sc., M.Sc. and now in my P.hD., which is how to quickly make a series of &amp;lsquo;semi&amp;rsquo; good-looking maps, that simply represent the locations of different sites over time.&lt;/p&gt;
 &lt;p&gt;Many people use fancy programs like &lt;a href=&#34;http://www.qgis.org/en/site/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;qGIS&lt;/a&gt; to include terrain and other details, but often these tools (although powerful) are unwieldy to use and take a long time to get familiar with before producing something you are looking for. Although &lt;a href=&#34;http://maps.google.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Google Maps&lt;/a&gt; is another alternative - such as through &lt;a href=&#34;http://drive.google.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Google Drive&amp;rsquo;s&lt;/a&gt; Fusion tables, often I find this still does not look as professional as those you see in academic publications.&lt;/p&gt;
