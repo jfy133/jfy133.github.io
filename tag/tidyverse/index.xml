@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>tidyverse | Academic</title>
+    <title>tidyverse | James A. Fellows Yates</title>
     <link>https://jfy133.github.com/tag/tidyverse/</link>
       <atom:link href="https://jfy133.github.com/tag/tidyverse/index.xml" rel="self" type="application/rss+xml" />
     <description>tidyverse</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-gb</language><copyright>© 2021 James A. Fellows Yates</copyright><lastBuildDate>Fri, 03 May 2019 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://jfy133.github.com/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <url>https://jfy133.github.com/media/icon_hu966224993cda5856fa4b65abf06b2eab_18228_512x512_fill_lanczos_center_3.png</url>
       <title>tidyverse</title>
       <link>https://jfy133.github.com/tag/tidyverse/</link>
     </image>
