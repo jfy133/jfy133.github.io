@@ -126,7 +126,7 @@ gg + facet_grid(Period ~ .)
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://jfy133.github.com/images/2017-05-28_2.png&#34; alt=&#34;Example time series map from R and ggplot2&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://jfy133.github.com/uploads/uploads/images/2017-05-28_2.png&#34; alt=&#34;Example time series map from R and ggplot2&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;Once you&amp;rsquo;ve got the image you like, you can then save in a variety of formats by adding the R functions &lt;code&gt;svg(&amp;quot;my_map.svg&amp;quot;, width=5, height=10)&lt;/code&gt; or &lt;code&gt;png(&amp;quot;my_map.png&amp;quot;, width=50, height=100)&lt;/code&gt; prior the final command and putting &lt;code&gt;dev.off()&lt;/code&gt; after the last command. The image should then be saved in your &amp;lsquo;working directory&amp;rsquo; set at the beginning.&lt;/p&gt;
