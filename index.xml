@@ -5,7 +5,7 @@
     <link>https://jfy133.github.com/</link>
       <atom:link href="https://jfy133.github.com/index.xml" rel="self" type="application/rss+xml" />
     <description>James A. Fellows Yates</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-gb</language><copyright>© 2021 James A. Fellows Yates</copyright><lastBuildDate>Sat, 01 Jun 2030 13:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-gb</language><copyright>© 2021 James A. Fellows Yates</copyright><lastBuildDate>Thu, 02 Sep 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://jfy133.github.com/media/icon_hub6dbd972940fdff31c6d4775500fc8c9_20277_512x512_fill_lanczos_center_3.png</url>
       <title>James A. Fellows Yates</title>
@@ -13,22 +13,29 @@
     </image>
     
     <item>
-      <title>Example Talk</title>
-      <link>https://jfy133.github.com/talk/example-talk/</link>
-      <pubDate>Sat, 01 Jun 2030 13:00:00 +0000</pubDate>
-      <guid>https://jfy133.github.com/talk/example-talk/</guid>
-      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
-  &lt;div&gt;
-    Click on the &lt;strong&gt;Slides&lt;/strong&gt; button above to view the built-in slides feature.
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;Slides can be added in a few ways:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Create&lt;/strong&gt; slides using Wowchemy&amp;rsquo;s &lt;a href=&#34;https://wowchemy.com/docs/managing-content/#create-slides&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;Slides&lt;/em&gt;&lt;/a&gt; feature and link using &lt;code&gt;slides&lt;/code&gt; parameter in the front matter of the talk file&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Upload&lt;/strong&gt; an existing slide deck to &lt;code&gt;static/&lt;/code&gt; and link using &lt;code&gt;url_slides&lt;/code&gt; parameter in the front matter of the talk file&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Embed&lt;/strong&gt; your slides (e.g. Google Slides) or presentation video on this page using &lt;a href=&#34;https://wowchemy.com/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;shortcodes&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Further event details, including &lt;a href=&#34;https://wowchemy.com/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;page elements&lt;/a&gt; such as image galleries, can be added to the body of this page.&lt;/p&gt;
+      <title>Standards Precautions and Advances in Ancient Metagenomics</title>
+      <link>https://jfy133.github.com/talk/standards-precautions-and-advances-in-ancient-metagenomics/</link>
+      <pubDate>Thu, 02 Sep 2021 00:00:00 +0000</pubDate>
+      <guid>https://jfy133.github.com/talk/standards-precautions-and-advances-in-ancient-metagenomics/</guid>
+      <description>&lt;p&gt;I presented on the nf-core/eager pipeline, in the session &amp;lsquo;Tools up or Die - gaps and solutions in ancient metagenomics analysis&amp;rsquo; organised and chaired by Aida Andrades Valtueña.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Introduction to NGS DNA Sequencing and Processing</title>
+      <link>https://jfy133.github.com/talk/introduction-to-ngs-dna-sequencing-and-processing/</link>
+      <pubDate>Tue, 17 Aug 2021 00:00:00 +0000</pubDate>
+      <guid>https://jfy133.github.com/talk/introduction-to-ngs-dna-sequencing-and-processing/</guid>
+      <description>&lt;p&gt;I introduced the basics of Illumina NGS data generation, and gave a practical walkthrough on how to process and evaluate such data.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Introduction to Archaeogenetics</title>
+      <link>https://jfy133.github.com/talk/introduction-to-archaeogenetics/</link>
+      <pubDate>Mon, 16 Aug 2021 00:00:00 +0000</pubDate>
+      <guid>https://jfy133.github.com/talk/introduction-to-archaeogenetics/</guid>
+      <description>&lt;p&gt;I co-presented on the history, basics, and case studies on the field of Palaeo- and Archaeogenetics with Selina Carlhoff.&lt;/p&gt;
 </description>
     </item>
     
@@ -38,6 +45,34 @@
       <pubDate>Tue, 18 May 2021 00:00:00 +0000</pubDate>
       <guid>https://jfy133.github.com/publication/2021-05-10-the-evolution-and-changing-ecology-of-the-african-hominid-oral-microbiome/</guid>
       <description>&lt;p&gt;Open access publication.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>nf-core/eager: Reproducible, portable, and efﬁcient ancient genome reconstruction</title>
+      <link>https://jfy133.github.com/talk/nf-core/eager-reproducible-portable-and-ef%EF%AC%81cient-ancient-genome-reconstruction/</link>
+      <pubDate>Sun, 02 May 2021 00:00:00 +0000</pubDate>
+      <guid>https://jfy133.github.com/talk/nf-core/eager-reproducible-portable-and-ef%EF%AC%81cient-ancient-genome-reconstruction/</guid>
+      <description>&lt;p&gt;I presented a poster on the nf-core/eager pipeline.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>nf-core/bytesize 10: making a new institutional profile</title>
+      <link>https://jfy133.github.com/talk/nf-core/bytesize-10-making-a-new-institutional-profile/</link>
+      <pubDate>Tue, 27 Apr 2021 00:00:00 +0000</pubDate>
+      <guid>https://jfy133.github.com/talk/nf-core/bytesize-10-making-a-new-institutional-profile/</guid>
+      <description>&lt;p&gt;I presented a short talk and Q&amp;amp;A session on writing institutional configuration profiles for nf-core Nextflow pipelines, as a part of the nf-core/bytsize seminar series on nf-core and Nextflow.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Improving access to ancient metagenomic data with the community-curated metadata repository</title>
+      <link>https://jfy133.github.com/talk/improving-access-to-ancient-metagenomic-data-with-the-community-curated-metadata-repository/</link>
+      <pubDate>Mon, 29 Mar 2021 00:00:00 +0000</pubDate>
+      <guid>https://jfy133.github.com/talk/improving-access-to-ancient-metagenomic-data-with-the-community-curated-metadata-repository/</guid>
+      <description>&lt;p&gt;I presented a poster on the AncientMetagenomeDir SPAAM Community project of ancient metagenomic sample metadata aggregation.&lt;/p&gt;
+&lt;p&gt;I also gave a lightning talk of the poster.&lt;/p&gt;
 </description>
     </item>
     
@@ -65,6 +100,17 @@
       <pubDate>Thu, 19 Nov 2020 00:00:00 +0000</pubDate>
       <guid>https://jfy133.github.com/publication/2020-11-24-do-i-have-something-in-my-teeth/</guid>
       <description>&lt;p&gt;Open access publication.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Standards Precautions and Advances in Ancient Metagenomics</title>
+      <link>https://jfy133.github.com/talk/standards-precautions-and-advances-in-ancient-metagenomics/</link>
+      <pubDate>Mon, 21 Sep 2020 00:00:00 +0000</pubDate>
+      <guid>https://jfy133.github.com/talk/standards-precautions-and-advances-in-ancient-metagenomics/</guid>
+      <description>&lt;p&gt;A grassroots-organised (originally) satellite meeting to ISBA9, specialising in tackling the challenges of ancient metagenomics.&lt;/p&gt;
+&lt;p&gt;I established, co-organised, chaired and also presented at the SPAAM2 round-table discussion workshop. Involving 80 ancient metagenomic researchers from around the world, we discussed a wide range of topics spanning the challenges of ancient microbiome, pathogenomic and environmental DNA reconstruction.&lt;/p&gt;
+&lt;p&gt;I laso gave a presentation entitled &amp;ldquo;Towards standards in metadata reporting in ancient metagenomic studies: experiences from AncientMetagenomeDir&amp;rdquo;, co-written with Antonio Fernandez Guerra. More information on SPAAM2 can be found on the &lt;a href=&#34;https://spaam-community.github.io/#/spaam2/README&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;SPAAM community website&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
@@ -210,6 +256,15 @@ screening analysis.&lt;/p&gt;
       <pubDate>Sat, 06 Jul 2019 00:00:00 +0000</pubDate>
       <guid>https://jfy133.github.com/publication/2019-07-06-microbial-differences-plaque-calculus/</guid>
       <description>&lt;p&gt;Open access publication.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Palaeomicrobiology of Teeth</title>
+      <link>https://jfy133.github.com/talk/palaeomicrobiology-of-teeth/</link>
+      <pubDate>Fri, 05 Jul 2019 00:00:00 +0000</pubDate>
+      <guid>https://jfy133.github.com/talk/palaeomicrobiology-of-teeth/</guid>
+      <description>&lt;p&gt;I gave a lecture to the EVEREST Graduate School at the University of Tübingen on what we can learn about human (pre-)history in the context of the microbial remains of ancient teeth.&lt;/p&gt;
 </description>
     </item>
     
@@ -452,6 +507,44 @@ Three
     </item>
     
     <item>
+      <title>Reconstruction of Oral Microbiomes from Extinct and Extant Anthropoids through Ancient DNA</title>
+      <link>https://jfy133.github.com/talk/reconstruction-of-oral-microbiomes-from-extinct-and-extant-anthropoids-through-ancient-dna/</link>
+      <pubDate>Thu, 20 Sep 2018 00:00:00 +0000</pubDate>
+      <guid>https://jfy133.github.com/talk/reconstruction-of-oral-microbiomes-from-extinct-and-extant-anthropoids-through-ancient-dna/</guid>
+      <description>&lt;p&gt;I gave an talk at the 8th International Symposium on Biomolecular
+Archaeology conference, entitled: &amp;ldquo;Reconstruction of oral microbiomes from
+extinct and extant anthropoids through ancient DNA&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;This was presented in the session: &amp;ldquo;Microbiomes&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;Co-authors include the Oral Microbiome Evolution Consortium (OMEC), the members of which can be seen &lt;a href=&#34;http://christinawarinner.com/research-2/research-o/omec/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Palaeogenomic Investigation Of 50,000 Years Of The Human Oral Microbiome In The Iberian Mediterranean</title>
+      <link>https://jfy133.github.com/talk/palaeogenomic-investigation-of-50000-years-of-the-human-oral-microbiome-in-the-iberian-mediterranean/</link>
+      <pubDate>Wed, 08 Aug 2018 00:00:00 +0000</pubDate>
+      <guid>https://jfy133.github.com/talk/palaeogenomic-investigation-of-50000-years-of-the-human-oral-microbiome-in-the-iberian-mediterranean/</guid>
+      <description>&lt;p&gt;I gave an talk at the European Association of Archaeologists conference, entitled:
+&amp;ldquo;Palaeogenomic Investigation Of 50,000 Years Of The Human Oral Microbiome In The Iberian Mediterranean&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;This was presented in the session: &amp;ldquo;EXPLORING THE POTENTIAL OF DENTAL CALCULUS
+FOR RECONSTRUCTING THE PAST&amp;rdquo; organised by Robert C. Power, Shira Guy Arieh,
+Cynthianne Spiteri and Domingo Carlos Salazar-Garcia.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Reconstruction of Oral Microbiomes From Extinct and Extant Anthropoids through Ancient DNA</title>
+      <link>https://jfy133.github.com/talk/reconstruction-of-oral-microbiomes-from-extinct-and-extant-anthropoids-through-ancient-dna/</link>
+      <pubDate>Wed, 11 Jul 2018 00:00:00 +0000</pubDate>
+      <guid>https://jfy133.github.com/talk/reconstruction-of-oral-microbiomes-from-extinct-and-extant-anthropoids-through-ancient-dna/</guid>
+      <description>&lt;p&gt;I presented a poster at SMBE18 Japan, entitled:
+&amp;ldquo;Reconstruction of Oral Microbiomes From Extinct and Extant Anthropoids through
+Ancient DNA&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;Co-authors include the Oral Microbiome Evolution Consortium (OMEC), the members of which can be seen &lt;a href=&#34;http://christinawarinner.com/research-2/research-o/omec/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Differential preservation of endogenous human and microbial DNA in dental calculus and dentin</title>
       <link>https://jfy133.github.com/publication/2018-06-29-differential-preservation-endogenous/</link>
       <pubDate>Fri, 29 Jun 2018 00:00:00 +0000</pubDate>
@@ -527,6 +620,15 @@ the merge conflict, for example:&lt;/li&gt;
 &lt;pre&gt;&lt;code&gt;git commit -m &amp;quot;Merged with &amp;lt;upstream_repo&amp;gt;&amp;quot;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;And with that your website theme should be updated.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Introduction to Ancient Dietary Metagenomes</title>
+      <link>https://jfy133.github.com/talk/introduction-to-ancient-dietary-metagenomes/</link>
+      <pubDate>Fri, 15 Sep 2017 00:00:00 +0000</pubDate>
+      <guid>https://jfy133.github.com/talk/introduction-to-ancient-dietary-metagenomes/</guid>
+      <description>&lt;p&gt;I gave a lecture to masters and PhD students at the University of Tübingen on the challenges of using ancient DNA to study diet in the past, in particular focusing on our ability to authenticate these signals in dental calculus and palaeofaeces. I also presented a brief set of guidelines aimed at archaeologists, on what to look for when reading an ancient DNA paper in this context. The slides from this talk can found on Google Drive &lt;a href=&#34;https://docs.google.com/presentation/d/1zZSo9VqlUDxi4IciFkddg-27Ypk6nKzF-aul8t3IzZI/edit?usp=sharing&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;, made available under a CC-NC-SA 4.0 License.&lt;/p&gt;
 </description>
     </item>
     
@@ -1165,6 +1267,33 @@ gg + facet_grid(Period ~ .)
       <pubDate>Mon, 17 Apr 2017 00:00:00 +0000</pubDate>
       <guid>https://jfy133.github.com/publication/2017-04-17-robust-framework-microbial-archaeology/</guid>
       <description>&lt;p&gt;Open access publication.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>DNA - Metagenomic analysis of Calculus</title>
+      <link>https://jfy133.github.com/talk/dna-metagenomic-analysis-of-calculus/</link>
+      <pubDate>Thu, 23 Feb 2017 00:00:00 +0000</pubDate>
+      <guid>https://jfy133.github.com/talk/dna-metagenomic-analysis-of-calculus/</guid>
+      <description>&lt;p&gt;I participated in a workshop that aimed to find a consensus on how improve the amount of information we can gain out of a single sampling of an archaeological specimen. The results of this collaborative discussion can be seen here: &lt;a href=&#34;https://sites.google.com/palaeome.org/wt-workshop/home&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://sites.google.com/palaeome.org/wt-workshop/home&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Central European Late Pleistocene Woolly Mammoths: Insights from Zooarchaeology, ZooMS, Stable Isotope and aDNA data.</title>
+      <link>https://jfy133.github.com/talk/central-european-late-pleistocene-woolly-mammoths-insights-from-zooarchaeology-zooms-stable-isotope-and-adna-data./</link>
+      <pubDate>Mon, 20 Feb 2017 00:00:00 +0000</pubDate>
+      <guid>https://jfy133.github.com/talk/central-european-late-pleistocene-woolly-mammoths-insights-from-zooarchaeology-zooms-stable-isotope-and-adna-data./</guid>
+      <description>&lt;p&gt;I gave a talk about my MS.c. thesis work on integrating Stable isotopes, ZooMS and mitochondrial genome capture of late Pleistocene woolly mammoths from central Europe.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Full Mitochondrial Genomes of Central European Upper Palaeolithic Woolly Mammoths (Mammuthus primigenius)</title>
+      <link>https://jfy133.github.com/talk/full-mitochondrial-genomes-of-central-european-upper-palaeolithic-woolly-mammoths-mammuthus-primigenius/</link>
+      <pubDate>Wed, 14 Sep 2016 00:00:00 +0000</pubDate>
+      <guid>https://jfy133.github.com/talk/full-mitochondrial-genomes-of-central-european-upper-palaeolithic-woolly-mammoths-mammuthus-primigenius/</guid>
+      <description>&lt;p&gt;I presented a poster about a part of MS.c. thesis focusing on woolly mammoth maternal clade replacement in late Pleistocene Europe, and subsequent issues found in resolving the mitochondrial phylogeney.&lt;/p&gt;
 </description>
     </item>
     
