@@ -30,5 +30,16 @@
 </description>
     </item>
     
+    <item>
+      <title>AncientMetagenomeDir</title>
+      <link>https://jfy133.github.com/project/ancientmetagenomedir/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://jfy133.github.com/project/ancientmetagenomedir/</guid>
+      <description>&lt;p&gt;AncientMetagenomeDir is a creative-commons licensed community curated resource of lists of all published shotgun-sequenced ancient metagenome or microbial genome-level enriched samples. It is primarily meant to act as a reference guide to help point researchers toward any relevant public data for comparative analysis. It is hoped it will help researchers track growth and development of the field of ancient metagenomics over time.&lt;/p&gt;
+&lt;p&gt;I established this project, lead development, and contribute to the ongoing maintenance of the repository.&lt;/p&gt;
+&lt;p&gt;The first release was published in &lt;a href=&#34;https://doi.org/10.1038/s41597-021-00816-y&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Scientific Data&lt;/a&gt; (open access).&lt;/p&gt;
+</description>
+    </item>
+    
   </channel>
 </rss>

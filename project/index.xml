@@ -5,7 +5,7 @@
     <link>https://jfy133.github.com/project/</link>
       <atom:link href="https://jfy133.github.com/project/index.xml" rel="self" type="application/rss+xml" />
     <description>Projects</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-gb</language><copyright>© 2021 James A. Fellows Yates</copyright><lastBuildDate>Wed, 27 Apr 2016 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-gb</language><copyright>© 2021 James A. Fellows Yates</copyright>
     <image>
       <url>https://jfy133.github.com/media/icon_hub6dbd972940fdff31c6d4775500fc8c9_20277_512x512_fill_lanczos_center_3.png</url>
       <title>Projects</title>
@@ -13,15 +13,37 @@
     </image>
     
     <item>
-      <title>Example Project</title>
-      <link>https://jfy133.github.com/project/example/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>https://jfy133.github.com/project/example/</guid>
-      <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.&lt;/p&gt;
-&lt;p&gt;Nullam vel molestie justo. Curabitur vitae efficitur leo. In hac habitasse platea dictumst. Sed pulvinar mauris dui, eget varius purus congue ac. Nulla euismod, lorem vel elementum dapibus, nunc justo porta mi, sed tempus est est vel tellus. Nam et enim eleifend, laoreet sem sit amet, elementum sem. Morbi ut leo congue, maximus velit ut, finibus arcu. In et libero cursus, rutrum risus non, molestie leo. Nullam congue quam et volutpat malesuada. Sed risus tortor, pulvinar et dictum nec, sodales non mi. Phasellus lacinia commodo laoreet. Nam mollis, erat in feugiat consectetur, purus eros egestas tellus, in auctor urna odio at nibh. Mauris imperdiet nisi ac magna convallis, at rhoncus ligula cursus.&lt;/p&gt;
-&lt;p&gt;Cras aliquam rhoncus ipsum, in hendrerit nunc mattis vitae. Duis vitae efficitur metus, ac tempus leo. Cras nec fringilla lacus. Quisque sit amet risus at ipsum pharetra commodo. Sed aliquam mauris at consequat eleifend. Praesent porta, augue sed viverra bibendum, neque ante euismod ante, in vehicula justo lorem ac eros. Suspendisse augue libero, venenatis eget tincidunt ut, malesuada at lorem. Donec vitae bibendum arcu. Aenean maximus nulla non pretium iaculis. Quisque imperdiet, nulla in pulvinar aliquet, velit quam ultrices quam, sit amet fringilla leo sem vel nunc. Mauris in lacinia lacus.&lt;/p&gt;
-&lt;p&gt;Suspendisse a tincidunt lacus. Curabitur at urna sagittis, dictum ante sit amet, euismod magna. Sed rutrum massa id tortor commodo, vitae elementum turpis tempus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean purus turpis, venenatis a ullamcorper nec, tincidunt et massa. Integer posuere quam rutrum arcu vehicula imperdiet. Mauris ullamcorper quam vitae purus congue, quis euismod magna eleifend. Vestibulum semper vel augue eget tincidunt. Fusce eget justo sodales, dapibus odio eu, ultrices lorem. Duis condimentum lorem id eros commodo, in facilisis mauris scelerisque. Morbi sed auctor leo. Nullam volutpat a lacus quis pharetra. Nulla congue rutrum magna a ornare.&lt;/p&gt;
-&lt;p&gt;Aliquam in turpis accumsan, malesuada nibh ut, hendrerit justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque sed erat nec justo posuere suscipit. Donec ut efficitur arcu, in malesuada neque. Nunc dignissim nisl massa, id vulputate nunc pretium nec. Quisque eget urna in risus suscipit ultricies. Pellentesque odio odio, tincidunt in eleifend sed, posuere a diam. Nam gravida nisl convallis semper elementum. Morbi vitae felis faucibus, vulputate orci placerat, aliquet nisi. Aliquam erat volutpat. Maecenas sagittis pulvinar purus, sed porta quam laoreet at.&lt;/p&gt;
+      <title>AncientMetagenomeDir</title>
+      <link>https://jfy133.github.com/project/ancientmetagenomedir/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://jfy133.github.com/project/ancientmetagenomedir/</guid>
+      <description>&lt;p&gt;AncientMetagenomeDir is a creative-commons licensed community curated resource of lists of all published shotgun-sequenced ancient metagenome or microbial genome-level enriched samples. It is primarily meant to act as a reference guide to help point researchers toward any relevant public data for comparative analysis. It is hoped it will help researchers track growth and development of the field of ancient metagenomics over time.&lt;/p&gt;
+&lt;p&gt;I established this project, lead development, and contribute to the ongoing maintenance of the repository.&lt;/p&gt;
+&lt;p&gt;The first release was published in &lt;a href=&#34;https://doi.org/10.1038/s41597-021-00816-y&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Scientific Data&lt;/a&gt; (open access).&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>nf-core/eager</title>
+      <link>https://jfy133.github.com/project/nf-core_eager/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://jfy133.github.com/project/nf-core_eager/</guid>
+      <description>&lt;p&gt;nf-core/eager is a scalable and reproducible bioinformatics best-practise processing pipeline for genomic NGS sequencing data, with a focus on ancient DNA (aDNA) data. It is ideal for the (palaeo)genomic analysis of humans, animals, plants, microbes and even microbiomes.&lt;/p&gt;
+&lt;p&gt;The pipeline is built using Nextflow, a workflow tool to run tasks across multiple compute infrastructures in a very portable manner. It comes with docker containers making installation trivial and results highly reproducible. The pipeline pre-processes raw data from FASTQ inputs, or preprocessed BAM inputs. It can align reads and performs extensive general NGS and aDNA specific quality-control on the results. It comes with docker, singularity or conda containers making installation trivial and results highly reproducible.&lt;/p&gt;
+&lt;p&gt;I co-lead development, and the current maintainer of the pipeline.&lt;/p&gt;
+&lt;p&gt;The pipeline was published in &lt;a href=&#34;https://doi.org/10.7717/peerj.10947&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PeerJ&lt;/a&gt; (open access).&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>SPAAM Community</title>
+      <link>https://jfy133.github.com/project/spaam/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://jfy133.github.com/project/spaam/</guid>
+      <description>&lt;p&gt;The SPAAM community is a group of researchers focusing on ancient metagenomics.&lt;/p&gt;
+&lt;p&gt;We aim to regularly meet to share knowledge on solutions to common challenges and obstacles that the field faces, with cycling organising committees. We also collectively run projects for the benefit of the whole community.&lt;/p&gt;
+&lt;p&gt;I established the community, and co-organised the SPAAM2 meeting in 2020. I continue to act as &amp;lsquo;caretaker&amp;rsquo; of the community and help establish new projects and collaborations between researchers.&lt;/p&gt;
+&lt;p&gt;We have an open slack channel that can be joined via the link on the website.&lt;/p&gt;
 </description>
     </item>
     

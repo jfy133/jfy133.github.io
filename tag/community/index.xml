@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>community | James A. Fellows Yates</title>
+    <link>https://jfy133.github.com/tag/community/</link>
+      <atom:link href="https://jfy133.github.com/tag/community/index.xml" rel="self" type="application/rss+xml" />
+    <description>community</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-gb</language><copyright>© 2021 James A. Fellows Yates</copyright>
+    <image>
+      <url>https://jfy133.github.com/media/icon_hub6dbd972940fdff31c6d4775500fc8c9_20277_512x512_fill_lanczos_center_3.png</url>
+      <title>community</title>
+      <link>https://jfy133.github.com/tag/community/</link>
+    </image>
+    
+    <item>
+      <title>SPAAM Community</title>
+      <link>https://jfy133.github.com/project/spaam/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://jfy133.github.com/project/spaam/</guid>
+      <description>&lt;p&gt;The SPAAM community is a group of researchers focusing on ancient metagenomics.&lt;/p&gt;
+&lt;p&gt;We aim to regularly meet to share knowledge on solutions to common challenges and obstacles that the field faces, with cycling organising committees. We also collectively run projects for the benefit of the whole community.&lt;/p&gt;
+&lt;p&gt;I established the community, and co-organised the SPAAM2 meeting in 2020. I continue to act as &amp;lsquo;caretaker&amp;rsquo; of the community and help establish new projects and collaborations between researchers.&lt;/p&gt;
+&lt;p&gt;We have an open slack channel that can be joined via the link on the website.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
