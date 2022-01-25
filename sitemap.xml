@@ -2,11 +2,47 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://jfy133.github.com/publication-type/2/</loc>
+    <lastmod>2021-12-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jfy133.github.com/tag/ancient-dna/</loc>
+    <lastmod>2021-12-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jfy133.github.com/publication/2021-12-21-ancient-metagenomic-studies-considerations-for-the-wider-scientific-community/</loc>
+    <lastmod>2021-12-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jfy133.github.com/tag/dental-calculus/</loc>
+    <lastmod>2021-12-21T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://jfy133.github.com/</loc>
-    <lastmod>2021-09-02T00:00:00+00:00</lastmod>
+    <lastmod>2021-12-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jfy133.github.com/tag/metagenomics/</loc>
+    <lastmod>2021-12-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jfy133.github.com/tag/microbiome/</loc>
+    <lastmod>2021-12-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jfy133.github.com/tag/opinion/</loc>
+    <lastmod>2021-12-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jfy133.github.com/publication_types/</loc>
+    <lastmod>2021-12-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jfy133.github.com/publication/</loc>
+    <lastmod>2021-12-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jfy133.github.com/tag/spaam/</loc>
+    <lastmod>2021-12-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jfy133.github.com/tags/</loc>
+    <lastmod>2021-12-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jfy133.github.com/talk/nf-core/bytesize-22-nf-core/eager/</loc>
+    <lastmod>2021-10-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://jfy133.github.com/event/</loc>
-    <lastmod>2021-09-02T00:00:00+00:00</lastmod>
+    <lastmod>2021-10-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://jfy133.github.com/talk/standards-precautions-and-advances-in-ancient-metagenomics/</loc>
     <lastmod>2021-09-02T00:00:00+00:00</lastmod>
@@ -17,34 +53,13 @@
     <loc>https://jfy133.github.com/talk/introduction-to-archaeogenetics/</loc>
     <lastmod>2021-08-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://jfy133.github.com/publication-type/2/</loc>
-    <lastmod>2021-05-18T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://jfy133.github.com/tag/ancient-dna/</loc>
-    <lastmod>2021-05-18T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://jfy133.github.com/tag/dental-calculus/</loc>
-    <lastmod>2021-05-18T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://jfy133.github.com/tag/evolution/</loc>
-    <lastmod>2021-05-18T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://jfy133.github.com/tag/microbiome/</loc>
     <lastmod>2021-05-18T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://jfy133.github.com/tag/neanderthal/</loc>
     <lastmod>2021-05-18T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://jfy133.github.com/tag/pleistocene/</loc>
-    <lastmod>2021-05-18T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://jfy133.github.com/publication_types/</loc>
-    <lastmod>2021-05-18T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://jfy133.github.com/publication/</loc>
-    <lastmod>2021-05-18T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://jfy133.github.com/tags/</loc>
     <lastmod>2021-05-18T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://jfy133.github.com/publication/2021-05-10-the-evolution-and-changing-ecology-of-the-african-hominid-oral-microbiome/</loc>
@@ -63,9 +78,6 @@
     <lastmod>2021-03-16T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://jfy133.github.com/tag/genomics/</loc>
-    <lastmod>2021-03-16T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://jfy133.github.com/tag/metagenomics/</loc>
     <lastmod>2021-03-16T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://jfy133.github.com/tag/nextflow/</loc>
@@ -305,8 +317,6 @@
     <loc>https://jfy133.github.com/project/nf-core_eager/</loc>
   </url><url>
     <loc>https://jfy133.github.com/project/</loc>
-  </url><url>
-    <loc>https://jfy133.github.com/tag/spaam/</loc>
   </url><url>
     <loc>https://jfy133.github.com/project/spaam/</loc>
   </url><url>

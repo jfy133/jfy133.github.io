@@ -5,12 +5,21 @@
     <link>https://jfy133.github.com/event/</link>
       <atom:link href="https://jfy133.github.com/event/index.xml" rel="self" type="application/rss+xml" />
     <description>Recent &amp; Upcoming Talks</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-gb</language><copyright>© 2021 James A. Fellows Yates</copyright><lastBuildDate>Thu, 02 Sep 2021 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-gb</language><copyright>© 2021 James A. Fellows Yates</copyright><lastBuildDate>Tue, 05 Oct 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://jfy133.github.com/media/icon_hub6dbd972940fdff31c6d4775500fc8c9_20277_512x512_fill_lanczos_center_3.png</url>
       <title>Recent &amp; Upcoming Talks</title>
       <link>https://jfy133.github.com/event/</link>
     </image>
+    
+    <item>
+      <title>nf-core/bytesize 22: nf-core/eager</title>
+      <link>https://jfy133.github.com/talk/nf-core/bytesize-22-nf-core/eager/</link>
+      <pubDate>Tue, 05 Oct 2021 00:00:00 +0000</pubDate>
+      <guid>https://jfy133.github.com/talk/nf-core/bytesize-22-nf-core/eager/</guid>
+      <description>&lt;p&gt;I presented a short talk and Q&amp;amp;A session on writing institutional configuration profiles for nf-core Nextflow pipelines, as a part of the nf-core/bytsize seminar series on nf-core and Nextflow.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Standards Precautions and Advances in Ancient Metagenomics</title>
