@@ -1,8 +1,15 @@
+<h2 class="section-title">
+  <span class="fa-stack fa-xs">
+    <i class="fas fa-circle fa-stack-2x"></i>
+    <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
+  </span>
+  {{ post.title }}
+</h2>
+
 <ul>
   {% for post in site.posts %}
   <li>
-    <a href="{{ post.url }}">{{ post.title }}</a>
-    {{ post.excerpt }}
+    <a href="{{ posts.url }}">{{ post.title }}</a>
   </li>
   {% endfor %}
 </ul>

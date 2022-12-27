@@ -1,0 +1,24 @@
+{% assign posts = site.data.data.posts %} {% if posts %}
+<section class="section posts-section">
+  <h2 class="section-title">
+    <span class="fa-stack fa-xs">
+      <i class="fas fa-circle fa-stack-2x"></i>
+      <i class="fas fa-file-alt fa-stack-1x fa-inverse"></i>
+    </span>
+    {{ posts.title }}
+  </h2>
+
+  {% if posts.intro %}
+  <div class="intro">{{ posts.intro | markdownify }}</div>
+  <!--//intro-->
+  {% endif %}
+  <ul>
+    {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+<!--//section-->
+{% endif %}
