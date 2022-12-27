@@ -1,0 +1,276 @@
+#
+# Be aware that even a small syntax error here can lead to failures in output.
+#
+
+sidebar:
+  about: True # set to False or comment line if you want to remove the "how to use?" in the sidebar
+  education: True # set to False if you want education in main section instead of in sidebar
+
+  # Profile information
+  name: Dr. James A. Fellows Yates
+  tagline: Post Doctoral Bioinformaician
+  avatar: profile.png #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
+
+  # Sidebar links
+  email: jfy133@gmail.com
+  ##phone: 012 345 6789
+  timezone: Central European Time
+  ##citizenship: British
+  website: jafy.eu #do not add http://
+  linkedin: james-fellows-yates-999859179
+  ##xing: alandoe
+  github: jfy133
+  ##telegram: # add your nickname without '@' sign
+  #gitlab:
+  #bitbucket:
+  twitter: "@jfy133"
+  #stack-overflow: # Number/Username, e.g. 123456/alandoe
+  #codewars:
+  #goodreads: # Number-Username, e.g. 123456-alandoe
+  ## TODO pdf: http://www.africau.edu/images/default/sample.pdf
+
+  languages:
+    title: Languages
+    info:
+      - idiom: English
+        level: Native
+
+      - idiom: German
+        level: B2
+
+      - idiom: Spanish
+        level: Basic
+
+      - idiom: Catalan
+        level: Basic
+
+##  interests:
+##    title: Interests
+##    info:
+##      - item: Climbing
+##        link:
+##
+##      - item: Snowboarding
+##        link:
+##
+##      - item: Cooking
+##        link:
+
+career-profile:
+  title: Career Profile
+  summary: |
+    James is a biomolecular archaeologist turned bioinformatician. His work 
+    currently focuses on the development of pipelines and tools for 
+    high-throughput analysis of next generation sequencing data of ancient 
+    metagenomics. He leads the development and is a contributor to a range of 
+    open-source metagenomics Nextflow pipelines and as well as tools in
+    written in in R and Shiny. He is a core member of the [nf-core](https://nf-co.re) 
+    bioinformatics pipeline initiative and the founder of the [SPAAM 
+    community](https://spaam-community.io) of ancient metagenomics researchers, 
+    the latter of which he runs a collaborative project improving access to 
+    ancient metagenomic data via metadata standardisation. He also has a passion
+    for open science, spanning open-data, open-software, and 
+    [open-protocols](https://dx.doi.org/10.17504/protocols.io.bvt9n6r6).
+education:
+  title: Education
+  info:
+    - degree: PhD in Bioinformatics
+      university: Friedrich-Schiller-Universität Jena (Max Planck Institute for the Science of Human History / Max Planck Institute for Evolutionary Anthropology, 🇩🇪)
+      time: 2015 - 2022
+      # details: |
+      #   Describe your study here lorem ipsum dolor sit amet, consectetuer
+      #   adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
+      #   sociis natoque penatibus et magnis dis parturient montes, nascetur
+      #   ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
+      #   pretium quis, sem.
+      #     - Bullet point
+      #     - Bullet point
+    - degree: MSc in Naturwissenschaftliches Archäologie
+      university: Eberhard-Karls-Universität Tübingen (🇩🇪)
+      time: 2013 - 2015
+      # details: |
+      #   Describe your study here lorem ipsum dolor sit amet, consectetuer
+      #   adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
+      #   sociis natoque penatibus et magnis dis parturient montes, nascetur
+      #   ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
+      #   pretium quis, sem.
+      #     - Bullet point
+      #     - Bullet point
+    - degree: BSc (Hons) in Biomolecular Archaeology
+      university: University of York (🇬🇧)
+      time: 2010 - 2013
+experiences:
+  title: Post Doctoral Researcher
+  info:
+    - role: Post Doctoral Research
+      time: 2021 - Present
+      company: Department of Palaeobiotechnology, Leibniz-Institut für Naturstoff-Forschung und Infektionsbiologie Hans-Knöll-Institut / Microbiome Sciences Group, Department of Archaeogenetics, Max Planck Institute for Evolutionary Anthropology
+      details: |
+        Development and training of/in metagenomic bioinformatic tools and 
+        pipelines. Sample and Next Generation Sequencing Data and project 
+        management and organisation. Establishment, organisation and teaching 
+        of/at a graduate-level summer school. Supervision of graduate students.
+    - role: Scientific Researcher
+      time: 2020-2021
+      company: Institut für Vor- und Frühgeschichtliche Archäologie und Provinzialrömische Archäologie, Ludwig-Maximilians-Universität München
+      details: |
+        Development of approaches and tools for novel archaeological metagenomic 
+        data for an ERC project.
+    - role: Research Assistance
+      time: 2015
+      company: AG Biogeologie, Biogeologie, Eberhard Karls Universität Tübingen
+      details: |
+        Data processing:
+        - Sample preparation and logging
+        - Collagen extraction
+        - Data digitalisation and cleaning
+projects:
+  title: Projects
+  intro: >
+    A list of the main set of projects I am currently working on or have developed.
+  assignments:
+    - title: nf-core/eager
+      link: "https://github.com/nf-core/eager"
+      tagline: "Lead developer of a fully reproducible and state-of-the-art Nextflow ancient DNA analysis pipeline for genomic analysis and pathogen screening."
+
+    - title: nf-core/taxprofiler
+      link: "https://github.com/nf-core/taxprofiler"
+      tagline: "Lead developer of a Nextflow pipeline for simultaenous multi-taxonomic profiling of shotgun metagenomic data."
+
+    - title: nf-core/funcscan
+      link: "https://github.com/nf-core/funcscan"
+      tagline: "Senior developer of a Nextflow pipeline for the screening of functional components and natural products from assembled contigs."
+
+    - title: nf-core/mag
+      link: "https://github.com/nf-core/mag"
+      tagline: "Regular contributor to a metagenomic _de novo_ assembly and binning pipeline written in Nextflow."
+
+    - title: cuperdec
+      link: "https://cran.r-project.org/web/packages/cuperdec/index.html"
+      tagline: "R Package for calculating and visualising cumulative percent 'decay' curves (a method I developed during my PhD), which are typically calculated from metagenomic taxonomic profiles. Available on CRAN."
+
+    - title: "MEx-IPA"
+      link: "https://github.com/jfy133/MEx-IPA"
+      tagline: "This R shiny app is a modified implementation of the metric visualisation script of the HOPS pipeline, with additional interactive plot functionality."
+
+oss:
+  title: OSS Contributions
+  intro: |
+    See Projects. All projects contributed to date are OSS.
+  # contributions:
+  #   - title: Tempo
+  #     link: "#"
+  #     tagline: "A responsive website template designed to help startups promote their products or services and to attract users &amp; investors"
+
+  #   - title: Atom
+  #     link: "#"
+  #     tagline: "A comprehensive website template solution for startups/developers to market their mobile apps."
+
+  #   - title: Delta
+  #     link: "#"
+  #     tagline: "A responsive Bootstrap one page theme designed to help app developers promote their mobile apps"
+
+publications:
+  title: Publications
+  intro: |
+    You can list your publications in this section. Lorem ipsum dolor sit
+    amet, consectetur adipiscing elit. Vestibulum et ligula in nunc
+    bibendum fringilla a eu lectus.
+  papers:
+    - title: "Ecology, Not Host Phylogeny, Shapes the Oral Microbiome in Closely Related Species."
+      link: "https://doi.org/10.1093/molbev/msac263"
+      authors: "Moraitou, M., Forsythe, A., Fellows Yates, J. A., Brealey, J. C., Warinner, C., & Guschanski, K."
+      conference: "(2022). Molecular Biology and Evolution, 39(12)."
+
+    - title: "Ecology, not host phylogeny, shapes the oral microbiome in closely related species of gorillas."
+      link: "https://doi.org/10.1101/2022.06.06.494923"
+      authors: "Moraitou, M., Forsythe, A., Fellows Yates, J. A., Brealey, J. C., Warinner, C., & Guschanski, K. "
+      conference: "(2022). bioRxiv (p. 2022.06.06.494923)."
+
+    - title: "Ancient Metagenomic Studies: Considerations for the Wider Scientific Community. "
+      link: "https://doi.org/10.1128/msystems.01315-21"
+      authors: "Der Sarkissian, C., Velsko, I. M., Fotakis, A. K., Vågene, Å. J., Hübner, A., & Fellows Yates, J. A. "
+      conference: "(2021). mSystems, 6(6), e0131521. "
+
+    - title: "The evolution and changing ecology of the African hominid oral microbiome."
+      link: "https://doi.org/10.1073/pnas.2021655118"
+      authors: "Fellows Yates, J. A., Velsko, I. M., Aron, F., Posth, C., Hofman, C. A., Austin, R. M., Parker, C. E., Mann, A. E., Nägele, K., Arthur, K. W., Arthur, J. W., Bauer, C. C., Crevecoeur, I., Cupillard, C., Curtis, M. C., Dalén, L., Bonilla, M. D.-Z., Carlos Díez Fernández-Lomana, J., Drucker, D. G., … Warinner, C. "
+      conference: "(2021). PNAS 118(20), e2021655118."
+
+    - title: "Reproducible, portable, and efficient ancient genome reconstruction with nf-core/eager."
+      link: "https://doi.org/10.7717/peerj.10947"
+      authors: "Fellows Yates, J. A., Lamnidis, T. C., Borry, M., Andrades Valtueña, A., Fagernäs, Z., Clayton, S., Garcia, M. U., Neukamm, J., & Peltzer, A. "
+      conference: "(2021). PeerJ, 9, e10947."
+
+    - title: "Community-curated and standardised metadata of published ancient metagenomic samples with AncientMetagenomeDir."
+      link: "https://doi.org/10.1038/s41597-021-00816-y"
+      authors: "Fellows Yates, J. A., Andrades Valtueña, A., Vågene, Å. J., Cribdon, B., Velsko, I. M., Borry, M., Bravo-Lopez, M. J., Fernandez-Guerra, A., Green, E. J., Ramachandran, S. L., Heintzman, P. D., Spyrou, M. A., Hübner, A., Gancz, A. S., Hider, J., Allshouse, A. F., Zaro, V., & Warinner, C."
+      conference: "(2021). Scientific Data, 8(1), 31."
+
+    - title: "Do I have something in my teeth? The trouble with genetic analyses of diet from archaeological dental calculus."
+      link: "https://doi.org/10.1016/j.quaint.2020.11.019"
+      authors: "Mann, A. E., Fellows Yates, J. A., Fagernäs, Z., Austin, R. M., Nelson, E. A., & Hofman, C. A."
+      conference: "(2020). Quaternary International"
+
+    - title: "Reproducible, portable, and efficient ancient genome reconstruction with nf-core/eager."
+      link: "https://doi.org/10.1101/2020.06.11.145615"
+      authors: "Fellows Yates, J. A., Lamnidis, T. C., Borry, M., Andrades Valtueña, A., Fagernäs, Z., Clayton, S., Garcia, M. U., Neukamm, J., & Peltzer, A."
+      conference: "(2020). bioRxiv (p. 2020.06.11.145615). "
+
+    - title: "Community-curated and standardised metadata of published ancient metagenomic samples with AncientMetagenomeDir."
+      link: "https://doi.org/10.1101/2020.09.02.279570"
+      authors: "Fellows Yates, J. A., Valtueña, A. A., Vågene, A. J., Cribdon, B., Velsko, I. M., Borry, M., Bravo-López, M. J., Fernandez-Guerra, A., Green, E. J., Ramachandran, S. L., Heintzman, P. D., Spyrou, M. A., Hübner, A., Gancz, A. S., Hider, J., Allshouse, A. F., & Warinner, C."
+      conference: "(2020). bioRxiv (p. 2020.09.02.279570)."
+
+    - title: "Micro Methods for Megafauna: Novel Approaches to Late Quaternary Extinctions and Their Contributions to Faunal Conservation in the Anthropocene."
+      link: "https://doi.org/10.1093/biosci/biz105"
+      authors: "Swift, J. A., Bunce, M., Dortch, J., Douglass, K., Faith, J. T., Fellows Yates, J. A., Field, J., Haberle, S. G., Jacob, E., Johnson, C. N., Lindsey, E., Lorenzen, E. D., Louys, J., Miller, G., Mychajliw, A. M., Slon, V., Villavicencio, N. A., Waters, M. R., Welker, F., … Roberts, P. "
+      conference: "(2019). Bioscience, 69(11), 877-887."
+
+    - title: "Microbial differences between dental plaque and historic dental calculus are related to oral biofilm maturation stage."
+      link: "https://doi.org/10.1186/s40168-019-0717-3"
+      authors: "Velsko, I. M., Fellows Yates, J. A., Aron, F., Hagan, R. W., Frantz, L. A. F., Loe, L., Martinez, J. B. R., Chaves, E., Gosden, C., Larson, G., & Warinner, C."
+      conference: "(2019). Microbiome, 7(1), 102."
+
+    - title: "Differential preservation of endogenous human and microbial DNA in dental calculus and dentin."
+      link: "https://doi.org/10.1038/s41598-018-28091-9"
+      authors: "Mann, A. E., Sabin, S., Ziesemer, K., Vågene, Å. J., Schroeder, H., Ozga, A. T., Sankaranarayanan, K., Hofman, C. A., Fellows Yates, J. A., Salazar-García, D. C., Frohlich, B., Aldenderfer, M., Hoogland, M., Read, C., Milner, G. R., Stone, A. C., Lewis, C. M., Jr, Krause, J., Hofman, C., Bos, K.I., Warinner, C."
+      conference: "(2018). Scientific Reports, 8(1), 9822. "
+
+    - title: "Central European Woolly Mammoth Population Dynamics: Insights from Late Pleistocene Mitochondrial Genomes."
+      link: "https://doi.org/10.1038/s41598-017-17723-1"
+      authors: "Fellows Yates, J. A., Drucker, D. G., Reiter, E., Heumos, S., Welker, F., Münzel, S. C., Wojtal, P., Lázničková-Galetová, M., Conard, N. J., Herbig, A., Bocherens, H., & Krause, J."
+      conference: "(2017) Scientific Reports, 7(1), 17714"
+
+    - title: A Robust Framework for Microbial Archaeology
+      link: "https://doi.org/10.1146/annurev-genom-091416-035526"
+      authors: "Warinner, C., Herbig, A., Mann, A., Fellows Yates, J. A., Weiß, C. L., Burbano, H. A., Orlando, L., & Krause, J."
+      conference: "(2017) Annual Review of Genomics and Human Genetics, 18, 321-356"
+
+skills:
+  title: Skills &amp; Proficiency
+
+  toolset:
+    - name: Nextflow
+      level: 80%
+
+    - name: R
+      level: 75%
+
+    - name: Conda
+      level: 65%
+
+    - name: HPCs
+      level: 60%
+
+    - name: Bash
+      level: 60%
+
+    - name: Linux
+      level: 50%
+
+    - name: Git
+      level: 50%
+
+footer: >
+  Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>. Contents ©️ James A. Fellows Yates, 2022
