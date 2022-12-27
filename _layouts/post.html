@@ -14,7 +14,10 @@
     <div class="wrapper">
       {% include sidebar.html %}
 
-      <div class="main-wrapper">{{ content }}</div>
+      <div class="main-wrapper">
+        <a href="{{site.url}}/">⬅️ <b>BACK</b></a>
+        {{ content }}
+      </div>
     </div>
 
     {% include footer.html %} {% include scripts.html %}

@@ -24,6 +24,10 @@ sidebar:
   #gitlab:
   #bitbucket:
   twitter: "@jfy133"
+  mastodon: "@jfy133"
+  researchgate: "James-Fellows-Yates"
+  googlescholar: "5Wy_JDgAAAAJ&hl"
+  orcid: "0000-0001-5585-6277"
   #stack-overflow: # Number/Username, e.g. 123456/alandoe
   #codewars:
   #goodreads: # Number-Username, e.g. 123456-alandoe
@@ -275,4 +279,4 @@ posts:
   intro: "These are my blog posts"
 
 footer: >
-  Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>. Contents ©️ James A. Fellows Yates, 2022
+  Contents: 2022 ©️ <a href="https://jafy.eu">James A. Fellows Yates<a>. Theme Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>.
