@@ -173,9 +173,7 @@ oss:
 publications:
   title: Publications
   intro: |
-    You can list your publications in this section. Lorem ipsum dolor sit
-    amet, consectetur adipiscing elit. Vestibulum et ligula in nunc
-    bibendum fringilla a eu lectus.
+    My publications and preprints
   papers:
     - title: "Ecology, Not Host Phylogeny, Shapes the Oral Microbiome in Closely Related Species."
       link: "https://doi.org/10.1093/molbev/msac263"
