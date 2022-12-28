@@ -83,3 +83,13 @@ Thanks to [Nelson Estevão](https://github.com/nelsonmestevao) for all the [cont
 Thanks to [t-h-e(sfrost)](https://github.com/t-h-e) for all the [contributions](https://github.com/sharu725/online-cv/commits?author=t-h-e).
 
 Check out for more themes: [**Jekyll Themes**](http://jekyll-themes.com).
+
+## Self Instructions
+
+- To add a new section
+  - Add new section with your details to `data.yml` with new field names if you want
+  - Make a new `_includes` template with section mae
+    - easiest is to copy existing similar layouts
+    - update section name to file name, and any field names (although may require further css formatting in places)
+    - update font-awesome icon atthe top (under section-title `h2`)
+  - Add to section type to `index.html`

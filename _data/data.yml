@@ -103,6 +103,7 @@ education:
     - degree: BSc (Hons) in Biomolecular Archaeology
       university: University of York (🇬🇧)
       time: 2010 - 2013
+
 experiences:
   title: Post Doctoral Researcher
   info:
@@ -128,6 +129,7 @@ experiences:
         - Sample preparation and logging
         - Collagen extraction
         - Data digitalisation and cleaning
+
 projects:
   title: Projects
   intro: >
@@ -248,6 +250,39 @@ publications:
       link: "https://doi.org/10.1146/annurev-genom-091416-035526"
       authors: "Warinner, C., Herbig, A., Mann, A., Fellows Yates, J. A., Weiß, C. L., Burbano, H. A., Orlando, L., & Krause, J."
       conference: "(2017) Annual Review of Genomics and Human Genetics, 18, 321-356"
+
+# talks:
+#   title: Conferences and Invited Talks
+#   papers:
+#     - title: A Robust Framework for Microbial Archaeology
+#       link: "https://doi.org/10.1146/annurev-genom-091416-035526"
+#       authors: "Warinner, C., Herbig, A., Mann, A., Fellows Yates, J. A., Weiß, C. L., Burbano, H. A., Orlando, L., & Krause, J."
+#       conference: "(2017) Annual Review of Genomics and Human Genetics, 18, 321-356"
+
+funding:
+  title: Funding and Grants
+  info:
+    - role: Studienstipendien für Graduierte aller wissenschaftlichen Fächer
+      time: 2014 - 2015
+      company: DAAD - Deutscher Akademischer Austauschdienst
+      details: |
+        Graduate Scholarship for studying at a German institution. €7860
+    - role: Edward Hall Memorial Fund
+      time: 2013 - 2014
+      company: Research Laboratory for Archaeology and the History of Art - University of Oxford
+      details: |
+        Postgraduate scholarship for studying at the University of Oxford. £1000 [Declined]
+
+# conferences:
+#   title: Conferences and Invited Talks
+#   intro: ""
+#   papers:
+#     - title:
+#       conference:fas fa-briefcase fa-stack-1x fa-inverse
+
+# teaching:
+#   title:
+#   intro:
 
 skills:
   title: Skills &amp; Proficiency
