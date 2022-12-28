@@ -251,13 +251,94 @@ publications:
       authors: "Warinner, C., Herbig, A., Mann, A., Fellows Yates, J. A., Weiß, C. L., Burbano, H. A., Orlando, L., & Krause, J."
       conference: "(2017) Annual Review of Genomics and Human Genetics, 18, 321-356"
 
-# talks:
-#   title: Conferences and Invited Talks
-#   papers:
-#     - title: A Robust Framework for Microbial Archaeology
-#       link: "https://doi.org/10.1146/annurev-genom-091416-035526"
-#       authors: "Warinner, C., Herbig, A., Mann, A., Fellows Yates, J. A., Weiß, C. L., Burbano, H. A., Orlando, L., & Krause, J."
-#       conference: "(2017) Annual Review of Genomics and Human Genetics, 18, 321-356"
+talks:
+  title: Conferences and Invited Talks
+  info:
+    - role: "Invited Talk: Introduction to the SPAAM community and open-science initiatives"
+      time: "2022"
+      company: "Fellows Yates, J. A.,"
+      details: "SedaDNA Society, Pacific Seminar Series, October 2022, Online"
+
+    - role: "Conference Poster: Efficient parallel taxonomic profiling for metagenomics with nf-core/taxprofiler"
+      time: "2022"
+      company: "Fellows Yates, J. A., Beber, M. E., Stamouli, S., Mesilaakso, L., Normark, T., Ou, J., Christensen, T.A., Jamy, M., Borry, M., Stępień, R, & nf-core community"
+      details: "Nextflow Summit, October 2022, Barcelona Spain"
+
+    - role: "Conference Talk: cuperdec: assessing endogenous community preservation in (ancient) microbiome samples through cumulative percent decay"
+      time: "2022"
+      company: "Fellows Yates, J. A."
+      details: "Standards Precautions, and Advances in Ancient Metagenomics 2022 (SPAAM4), October 2022, Online"
+
+    - role: "Conference Poster: Improving accessiblity to ancient microbiome data beyond palaeogenomics"
+      time: "2022"
+      company: "Fellows Yates, J. A., SPAAM community, & nf-core Community"
+      details: "Applied Hologenomics, October 2022, Bilbao, Spain (Presented by supervisor due to sickness)"
+
+    - role: "Invited Talk: Open Science Initiatives in Ancient (Meta)genomics"
+      time: "2022"
+      company: "Fellows Yates, J.A."
+      details: "Palaeoproteomics Section, GLOBE Institute, Copenhagen, Denmark, Apr 2022, Online "
+
+    - role: "Invited Talk: nf-core/eager: High-throughput and scalable palaeogenomics using nf-core/eager"
+      time: "2021"
+      company: "Fellows Yates, J.A., "
+      details: "Series: NGI Sweden Outreach (Ancient DNA), November 2021, Online"
+
+    - role: "Conference Talk: High-throughput and scalable ancient metagenomic analysis using nf-core/eager"
+      time: "2021"
+      company: "Fellows Yates, J.A."
+      details: "Standards Precautions, and Advances in Ancient Metagenomics 2021 (SPAAM3), September 2021, Online"
+
+    - role: "Conference Poster: nf-core/eager: Reproducible, portable, and efﬁcient ancient genome reconstruction"
+      time: "2021"
+      company: "Fellows Yates, J.A., Lamnidis, T.C., Borry, M., Andrades Valtueña, A., Fagernäs, Z., Clayton, S., Garcia M.U, Neukamm, J., Peltzer, A."
+      details: "International Symposium for Biomolecular Archaeology (ISBA9), June 2021, Online"
+
+    - role: "Conference Poster: Improving access to ancient metagenomic data with the community-curated metadata repository AncientMetagenomeDir "
+      time: "2021"
+      company: "Fellows Yates, J. A., Andrades Valtueña, A., Vågene, Å. J., Cribdon, B., Velsko, I. M., Borry, M., Bravo-Lopez, M. J., Fernandez-Guerra, A., Green, E. J., Ramachandran, S. L., Heintzman, P. D., Spyrou, M. A., Hübner, A., Gancz, A. S., Hider, J., Allshouse, A. F., Zaro, V., & Warinner, C."
+      details: "Wellcome Trust Connecting Science - Ancient Biomolecules of Plants, Animals, and Microbes, March 2021, Online"
+
+    - role: "Conference Talk: Towards standards in metadata reporting in ancient metagenomic studies: experiences from AncientMetagenomeDir"
+      time: "2020"
+      company: "Towards standards in metadata reporting in ancient metagenomic studies: experiences from AncientMetagenomeDir"
+      details: "Standards Precautions, and Advances in Ancient Metagenomics 2020 (SPAAM2), September 2020, Online"
+
+    - role: "Conference Talk: Reconstruction of Oral Microbiomes from Extinct and Extant Anthropoids through ancient DNA"
+      time: "2018"
+      company: "Fellows Yates. J.A.; Aron, F.; Velsko, I.; Arthur, J.; Austin, R.M.; Crevecoeur, I.; Dalén, L.; Gonzalez Morales M.R.; Guschanski K.; Henry, A.G.; Hofman, C.A.; Humphrey, L.T.; Lewis, C.M.; Mann, A.E.; Nägele, K.; Parker, C.E.; Posth, C.; Rougier, H.; Sankaranarayan, K.; Semal, P., Stock, J.; Strauss, L.G.; Weedman Arthur, K.; Wrangham, R.W; Curtis, M.C; Diez, J.C.; Gibbon, V.E.; Menedez, M.; Peresani, M.; Roksandic, M.; Walker, M.J.; Power, R.C.; Salazar-Garcia, D.C.; Krause, J; Herbig, A.; Warinner. C."
+      details: "International Symposium for Biomolecular Archaeology (ISBA8), September 2018, Jena, Germany"
+
+    - role: "Conference Talk: Palaeogenomic Investigation Of 50,000 Years Of The Human Oral Microbiome In The Iberian Mediterranean"
+      time: "2018"
+      company: "Fellows Yates, J.A.; Salazar-García D.C.; Hofman, C.A.; Aron, F.; Power, R.C.; Benítez de Lugo Enrich, L.; Haber, M.; García Atiénzar, G.;Oms, X.; Benito, M.; Avilés Fernández, A.; Sanz, M.; Barciela González, V.; Valero Tévar, M.A.; Gallego Valle D.; Zarzalejos Prieto, M.; Giner Iranzo D.;Hevia Gómez P.; Peña Ruiz, C.; Esteban Borrajo, G.; Molero García, J.; Díez, J.C.; Daura, J.; Lomba-Maurandi, J.; Menéndez M.; Hernández Pérez, M.; Villaverde Bonilla, V.; Krause, J; Herbig, A.; Warinner, C. "
+      details: "Annual Meeting of the European Association for Archaeologists (EAA 2018), September 2018, Barcelona, Spain "
+
+    - role: "Conference Poster: Reconstruction of Oral Microbiomes from Extinct and Extant Anthropoids through ancient DNA"
+      time: "2018"
+      company: "Fellows Yates. J.A.; Aron, F.; Velsko, I.; Arthur, J.; Austin, R.M.; Crevecoeur, I.; Dalén, L.; Gonzalez Morales M.R.; Guschanski K.; Henry, A.G.; Hofman, C.A.; Humphrey, L.T.; Lewis, C.M.; Mann, A.E.; Nägele, K.; Parker, C.E.; Posth, C.; Rougier, H.; Sankaranarayan, K.; Semal, P., Stock, J.; Strauss, L.G.; Weedman Arthur, K.; Wrangham, R.W; Curtis, M.C; Diez, J.C.; Gibbon, V.E.; Menedez, M.; Peresani, M.; Roksandic, M.; Walker, M.J.; Power, R.C.; Salazar-Garcia, D.C.; Krause, J; Herbig, A.; Warinner. C. "
+      details: "Society for Molecular Biology and Evolution (SMBE18), July 2018, Yokohama, Japan"
+
+    - role: "Workshop Presentation: Central European Late Pleistocene Woolly Mammoths: Insights from ZooMS, Stable Isotope and aDNA data"
+      time: "2017"
+      company: "Fellows Yates, J.A.; Drucker, D.G.; Reiter, E.; Heumos, S.; Welker, F.; Münzel, S.C;; Wojtal, P.; Lázničková-Galetová, M.; Conard, N.J.; Herbig, A.; Bocherens, H.,; Krause, J."
+      details: "Megafauna and Methods Workshop, February 2017, Jena, Germany"
+
+    - role: "Invited Talk: Palaeomicrobiology of Teeth"
+      time: "2019"
+      company: "Fellows Yates, J. A."
+      details: "Workshop ‘All About Teeth’, July 2019, EVEREST graduate school, University of Tübingen, Germany"
+
+    - role: "Invited Talk: Introduction to Dietary Metagenomes"
+      time: "2017"
+      company: "Fellows Yates, J. A."
+      details: "Archaeological Science workshop ‘Palaeodiet’, July 2018,  Institute for Archaeological Sciences, University of Tübingen, Germany"
+
+    - role: "Conference Poster: Full Mitochondrial Genomes of Central European Upper Palaeolithic Woolly Mammoths (Mammuthus primigenius) (Conference Poster)"
+      time: "2016"
+      company: "Fellows Yates, J. A.; Drucker, D.G.; Herbig, A.; Münzel, S.C.; Bocherens, H.; Krause, J."
+      details: "International Symposium for Biomolecular Archaeology (ISBA7), September 2016, Oxford, United Kingdom"
+      link: "http://dx.doi.org/10.13140/RG.2.2.33453.28648"
 
 funding:
   title: Funding and Grants

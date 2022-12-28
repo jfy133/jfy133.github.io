@@ -3,23 +3,28 @@
   <h2 class="section-title">
     <span class="fa-stack fa-xs">
       <i class="fas fa-circle fa-stack-2x"></i>
-      <i class="fas fa-presentation-screen fa-stack-1x fa-inverse"></i>
+      <i class="fas fa-file-powerpoint fa-stack-1x fa-inverse"></i>"></i>
     </span>
     {{ talks.title }}
   </h2>
 
-  {% if talks.intro %}
-  <div class="intro">{{ talks.intro | markdownify }}</div>
-  <!--//intro-->
-  {% endif %} {% for talks in talks.papers %}
+  {% for talks in talks.info %}
   <div class="item">
-    {% if talks.link %}
-    <li><a href="{{ talks.link }}">{{ talks.title }}</a></li>
-    {% else %}
-    <li>{{ talks.title }}</li>
+    <div class="meta">
+      <div class="upper-row">
+        <h3 class="job-title">{{ talks.role }}</h3>
+        <div class="time">{{ talks.time }}</div>
+      </div>
+      <!--//upper-row-->
+
+      <div class="company">{{ talks.company }}</div>
+    </div>
+    <!--//meta-->
+
+    {% if talks.details %}
+    <div class="details">{{ talks.details | markdownify }}</div>
+    <!--//details-->
     {% endif %}
-    <div class="talks-authors">{{ talks.authors }}</div>
-    <div class="talks-conference">{{ talks.conference }}</div>
   </div>
   <!--//item-->
   {% endfor %}
