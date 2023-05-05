@@ -181,6 +181,11 @@ publications:
   intro: |
     My publications and preprints
   papers:
+    - title: "Natural products from reconstructed bacterial genomes of the Middle and Upper Paleolithic"
+      link: "https://doi.org/10.1126/science.adf5300"
+      authors: "Klapper, M., Hübner, A., Ibrahim, A., Wasmuth, I., Borry, M., Haensch, V. G., Zhang, S., Al-Jammal, W. K., Suma, H., Fellows Yates, J. A., Frangenberg, J., Velsko, I. M., Chowdhury, S., Herbst, R., Bratovanov, E. V., Dahse, H.-M., Horch, T., Hertweck, C., González Morales, M. R.,  Straus, L.G., Vilotijevic, I., Warinner, C., Stallforth, P."
+      conference: "(2023) Science."
+    
     - title: "Ecology, Not Host Phylogeny, Shapes the Oral Microbiome in Closely Related Species."
       link: "https://doi.org/10.1093/molbev/msac263"
       authors: "Moraitou, M., Forsythe, A., Fellows Yates, J. A., Brealey, J. C., Warinner, C., & Guschanski, K."
