@@ -181,6 +181,11 @@ publications:
   intro: |
     My publications and preprints
   papers:
+    - title: "TAXPASTA: TAXonomic Profile Aggregation and STAndardisation"
+      link: "https://doi.org/10.21105/joss.05627"
+      authors: "Beber, M. E., Borry, M., Stamouli, S., Fellows Yates, J. A."
+      conference: "(2023) Journal of Open Source Software."
+  
     - title: "Natural products from reconstructed bacterial genomes of the Middle and Upper Paleolithic"
       link: "https://doi.org/10.1126/science.adf5300"
       authors: "Klapper, M., Hübner, A., Ibrahim, A., Wasmuth, I., Borry, M., Haensch, V. G., Zhang, S., Al-Jammal, W. K., Suma, H., Fellows Yates, J. A., Frangenberg, J., Velsko, I. M., Chowdhury, S., Herbst, R., Bratovanov, E. V., Dahse, H.-M., Horch, T., Hertweck, C., González Morales, M. R.,  Straus, L.G., Vilotijevic, I., Warinner, C., Stallforth, P."
