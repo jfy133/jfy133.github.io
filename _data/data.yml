@@ -155,6 +155,7 @@ oss:
   title: OSS Contributions
   intro: |
     See Projects. All projects contributed to date are OSS.
+  assignments:
     - title: nf-core/eager
       link: "https://github.com/nf-core/eager"
       tagline: "Lead developer of a fully reproducible and state-of-the-art Nextflow ancient DNA analysis pipeline for genomic analysis and pathogen screening."
