@@ -133,8 +133,28 @@ experiences:
 projects:
   title: Projects
   intro: >
-    A list of the main set of software projects I am currently working on or have developed.
+    A list of the main set of open source projects I am currently working on or have developed.
   assignments:
+    - title: "AncientMetagenomeDir"
+      link: "https://github.com/SPAAM-community/AncientMetagenomeDir"
+      tagline: "Community-curated repository of standardised metadata and download information for all publically available ancient (microbial) (meta)genome"
+
+    - title: "MInAS"
+      link: "https://mixs-minas.org/"
+      tagline: "The MInAS project aims to develop standardised metadata reporting schemes of ancient DNA samples and sequencing data via community-based consensus and training."
+
+    - title: "Introduction to Ancient Metagenomics (SPAAM Summer School and Textbook)"
+      link: "https://spaam-community.org/intro-to-ancient-metagenomics-book/"
+      tagline: "A yearly practical summer school/block course introducting graduate and doctoral students to the basic bioinformatic workflows ancient metagenomics. All teaching material is dervied on a community curated textbook"
+
+    - title: "Little Book of Smiley Plots"
+      link: "https://www.spaam-community.org/little-book-of-smiley-plots/"
+      tagline: "A light-hearted reference book of ancient DNA damage plots and their causes"
+
+oss:
+  title: OSS Contributions
+  intro: |
+    See Projects. All projects contributed to date are OSS.
     - title: nf-core/eager
       link: "https://github.com/nf-core/eager"
       tagline: "Lead developer of a fully reproducible and state-of-the-art Nextflow ancient DNA analysis pipeline for genomic analysis and pathogen screening."
@@ -158,23 +178,6 @@ projects:
     - title: "MEx-IPA"
       link: "https://github.com/jfy133/MEx-IPA"
       tagline: "This R shiny app is a modified implementation of the metric visualisation script of the HOPS pipeline, with additional interactive plot functionality."
-
-oss:
-  title: OSS Contributions
-  intro: |
-    See Projects. All projects contributed to date are OSS.
-  # contributions:
-  #   - title: Tempo
-  #     link: "#"
-  #     tagline: "A responsive website template designed to help startups promote their products or services and to attract users &amp; investors"
-
-  #   - title: Atom
-  #     link: "#"
-  #     tagline: "A comprehensive website template solution for startups/developers to market their mobile apps."
-
-  #   - title: Delta
-  #     link: "#"
-  #     tagline: "A responsive Bootstrap one page theme designed to help app developers promote their mobile apps"
 
 publications:
   title: Publications
