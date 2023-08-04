@@ -133,7 +133,7 @@ experiences:
 projects:
   title: Projects
   intro: >
-    A list of the main set of projects I am currently working on or have developed.
+    A list of the main set of software projects I am currently working on or have developed.
   assignments:
     - title: nf-core/eager
       link: "https://github.com/nf-core/eager"
@@ -181,6 +181,11 @@ publications:
   intro: |
     My publications and preprints
   papers:
+    - title: "Facilitating accessible, rapid, and appropriate processing of ancient metagenomic data with AMDirT"
+      link: "https://doi.org/10.12688/f1000research.134798.1"
+      authors: "Borry, M., Forsythe, A., Valtueña Andrades, A., Hübner, A.,; Ibrahim, A., Quagliariello, A., White, A. E., Kocher, A., Vågene‬, Å. J., Bartholdy, B. P., Spurīte, D., Ponce-Soto, Gabriel Y.,; Neumann, G., Huang, I-T., Light, I., Velsko, I. M., Jackson, I., Frangenberg, J., Serrano, J. G., Fumey, J., Özdoğan, K. T.; Blevins, K. E., Daly, K. G., Lopopolo, M., Moraitou, M., Michel, M., van Os, M., Bravo-Lopez, M. J., Sarhan, M. S., Dagtas, N. D., Oskolkov, N., Smith, O. S., Lebrasseur, O., Rozwalak, P., Eisenhofer, R., Wasef, S., Ramachandran, S. L., Vanghi, V., Warinner, C., Fellows Yates, J. A."
+      conference: "(2023) F1000"
+  
     - title: "TAXPASTA: TAXonomic Profile Aggregation and STAndardisation"
       link: "https://doi.org/10.21105/joss.05627"
       authors: "Beber, M. E., Borry, M., Stamouli, S., Fellows Yates, J. A."
