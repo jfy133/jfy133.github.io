@@ -189,17 +189,17 @@ publications:
       link: "https://doi.org/10.12688/f1000research.134798.1"
       authors: "Borry, M., Forsythe, A., Valtueña Andrades, A., Hübner, A.,; Ibrahim, A., Quagliariello, A., White, A. E., Kocher, A., Vågene‬, Å. J., Bartholdy, B. P., Spurīte, D., Ponce-Soto, Gabriel Y.,; Neumann, G., Huang, I-T., Light, I., Velsko, I. M., Jackson, I., Frangenberg, J., Serrano, J. G., Fumey, J., Özdoğan, K. T.; Blevins, K. E., Daly, K. G., Lopopolo, M., Moraitou, M., Michel, M., van Os, M., Bravo-Lopez, M. J., Sarhan, M. S., Dagtas, N. D., Oskolkov, N., Smith, O. S., Lebrasseur, O., Rozwalak, P., Eisenhofer, R., Wasef, S., Ramachandran, S. L., Vanghi, V., Warinner, C., Fellows Yates, J. A."
       conference: "(2023) F1000"
-  
+
     - title: "TAXPASTA: TAXonomic Profile Aggregation and STAndardisation"
       link: "https://doi.org/10.21105/joss.05627"
       authors: "Beber, M. E., Borry, M., Stamouli, S., Fellows Yates, J. A."
       conference: "(2023) Journal of Open Source Software."
-  
+
     - title: "Natural products from reconstructed bacterial genomes of the Middle and Upper Paleolithic"
       link: "https://doi.org/10.1126/science.adf5300"
       authors: "Klapper, M., Hübner, A., Ibrahim, A., Wasmuth, I., Borry, M., Haensch, V. G., Zhang, S., Al-Jammal, W. K., Suma, H., Fellows Yates, J. A., Frangenberg, J., Velsko, I. M., Chowdhury, S., Herbst, R., Bratovanov, E. V., Dahse, H.-M., Horch, T., Hertweck, C., González Morales, M. R.,  Straus, L.G., Vilotijevic, I., Warinner, C., Stallforth, P."
       conference: "(2023) Science."
-    
+
     - title: "Ecology, Not Host Phylogeny, Shapes the Oral Microbiome in Closely Related Species."
       link: "https://doi.org/10.1093/molbev/msac263"
       authors: "Moraitou, M., Forsythe, A., Fellows Yates, J. A., Brealey, J. C., Warinner, C., & Guschanski, K."
@@ -273,7 +273,6 @@ publications:
 talks:
   title: Conferences and Invited Talks
   info:
-
     - role: "Invited Talk: Bioinformatic Resources for (Ancient) Metagenomics"
       link: "https://pastglobalchanges.org/calendar/129294"
       time: "2023"
@@ -285,7 +284,7 @@ talks:
       time: "2023"
       company: "Fellows Yates, J. A.,"
       details: "Next Generation Sequencing Competence Network Yearly Workshop (Germany), April 2023, Tübingen, Germany"
-  
+
     - role: "Invited Talk: Introduction to the SPAAM community and open-science initiatives"
       link: "https://www.youtube.com/watch?v=8kR3qYcEBh8"
       time: "2022"
@@ -326,6 +325,7 @@ talks:
       time: "2021"
       company: "Fellows Yates, J.A., Lamnidis, T.C., Borry, M., Andrades Valtueña, A., Fagernäs, Z., Clayton, S., Garcia M.U, Neukamm, J., Peltzer, A."
       details: "International Symposium for Biomolecular Archaeology (ISBA9), June 2021, Online"
+      link: "https://raw.githubusercontent.com/jfy133/jfy133.github.io/master/assets/files/FELLOWSYATES_James_abstract1517_poster84_ISBA9-Poster.pdf"
 
     - role: "Conference Poster: Improving access to ancient metagenomic data with the community-curated metadata repository AncientMetagenomeDir "
       time: "2021"
