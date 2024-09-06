@@ -112,7 +112,8 @@ experiences:
       company: Department of Palaeobiotechnology, Leibniz-Institut für Naturstoff-Forschung und Infektionsbiologie Hans-Knöll-Institut / Microbiome Sciences Group, Department of Archaeogenetics, Max Planck Institute for Evolutionary Anthropology
       details: |
         Development and training of/in metagenomic bioinformatic tools and 
-        pipelines. Sample and Next Generation Sequencing Data and project 
+        pipelines. Development of standardised metadata schemas.
+        Sample and Next Generation Sequencing Data and project 
         management and organisation. Establishment, organisation and teaching 
         of/at a graduate-level summer school. Supervision of graduate students.
     - role: Scientific Researcher
@@ -130,47 +131,30 @@ experiences:
         - Collagen extraction
         - Data digitalisation and cleaning
 
-projects:
-  title: Projects
-  intro: >
-    A list of the main set of open source projects I am currently working on or have developed.
-  assignments:
-    - title: "AncientMetagenomeDir"
-      link: "https://github.com/SPAAM-community/AncientMetagenomeDir"
-      tagline: "Community-curated repository of standardised metadata and download information for all publically available ancient (microbial) (meta)genome"
-
-    - title: "MInAS"
-      link: "https://mixs-minas.org/"
-      tagline: "The MInAS project aims to develop standardised metadata reporting schemes of ancient DNA samples and sequencing data via community-based consensus and training."
-
-    - title: "Introduction to Ancient Metagenomics (SPAAM Summer School and Textbook)"
-      link: "https://spaam-community.org/intro-to-ancient-metagenomics-book/"
-      tagline: "A yearly practical summer school/block course introducting graduate and doctoral students to the basic bioinformatic workflows ancient metagenomics. All teaching material is dervied on a community curated textbook"
-
-    - title: "Little Book of Smiley Plots"
-      link: "https://www.spaam-community.org/little-book-of-smiley-plots/"
-      tagline: "A light-hearted reference book of ancient DNA damage plots and their causes"
-
 oss:
   title: OSS Contributions
   intro: |
     See Projects. All projects contributed to date are OSS.
   contributions:
-    - title: nf-core/eager
-      link: "https://github.com/nf-core/eager"
-      tagline: "Lead developer of a fully reproducible and state-of-the-art Nextflow ancient DNA analysis pipeline for genomic analysis and pathogen screening."
-
     - title: nf-core/taxprofiler
       link: "https://github.com/nf-core/taxprofiler"
       tagline: "Lead developer of a Nextflow pipeline for simultaenous multi-taxonomic profiling of shotgun metagenomic data."
+
+    - title: nf-core/createtaxdb
+      link: "https://github.com/nf-core/createtaxdb"
+      tagline: "Lead developer of a Nextflow pipeline for parallelised and automated construction of metagenomic classifier databases of different tools ."
+
+    - title: nf-core/mag
+      link: "https://github.com/nf-core/mag"
+      tagline: "Maintainer to a metagenomic _de novo_ assembly and binning pipeline written in Nextflow."
 
     - title: nf-core/funcscan
       link: "https://github.com/nf-core/funcscan"
       tagline: "Senior developer of a Nextflow pipeline for the screening of functional components and natural products from assembled contigs."
 
-    - title: nf-core/mag
-      link: "https://github.com/nf-core/mag"
-      tagline: "Regular contributor to a metagenomic _de novo_ assembly and binning pipeline written in Nextflow."
+    - title: nf-core/eager
+      link: "https://github.com/nf-core/eager"
+      tagline: "Co-lead developer of a fully reproducible and state-of-the-art Nextflow ancient DNA analysis pipeline for genomic analysis and pathogen screening."
 
     - title: cuperdec
       link: "https://cran.r-project.org/web/packages/cuperdec/index.html"
@@ -180,15 +164,41 @@ oss:
       link: "https://github.com/jfy133/MEx-IPA"
       tagline: "This R shiny app is a modified implementation of the metric visualisation script of the HOPS pipeline, with additional interactive plot functionality."
 
+projects:
+  title: Projects
+  intro: >
+    A list of the main set of non-software open source projects I am currently working on or have developed.
+  assignments:
+    - title: "MInAS"
+      link: "https://mixs-minas.org/"
+      tagline: "The MInAS project aims to develop standardised metadata reporting schemes of ancient DNA samples and sequencing data via community-based consensus and training."
+
+    - title: "AncientMetagenomeDir"
+      link: "https://github.com/SPAAM-community/AncientMetagenomeDir"
+      tagline: "Community-curated repository of standardised metadata and download information for all publically available ancient (microbial) (meta)genome"
+
+    - title: "Introduction to Ancient Metagenomics (SPAAM Summer School and Textbook)"
+      link: "https://spaam-community.org/intro-to-ancient-metagenomics-book/"
+      tagline: "A yearly practical summer school/block course introducting graduate and doctoral students to the basic bioinformatic workflows ancient metagenomics. All teaching material is dervied on a community curated textbook"
+
+    - title: "Little Book of Smiley Plots"
+      link: "https://www.spaam-community.org/little-book-of-smiley-plots/"
+      tagline: "A light-hearted reference book of ancient DNA damage plots and their causes"
+
 publications:
   title: Publications
   intro: |
     My publications and preprints
   papers:
+    - title: "Empowering bioinformatics communities with  Nextflow and nf-core"
+      link: "https://doi.org/10.1101/2024.05.10.592912"
+      authors: "Langer, B. E., Amaral, A., Baudement, M.-O., Bonath, F., Charles, M., Chitneedi, P. K., Clark, E. L., Di Tommaso, P., Djebali, S., Ewels, P. A., Eynard, S., Fellows Yates, J. A., Fischer, D., Floden, E. W., Foissac, S., Gabernet, G., Garcia, M. U., Gillard, G., Gundappa, M. K., … nf-core community."
+      conference: "(2024) bioRxiv (p. 2024.05.10.592912)."
+
     - title: "Facilitating accessible, rapid, and appropriate processing of ancient metagenomic data with AMDirT"
-      link: "https://doi.org/10.12688/f1000research.134798.1"
+      link: "https://doi.org/10.12688/f1000research.134798.2"
       authors: "Borry, M., Forsythe, A., Valtueña Andrades, A., Hübner, A.,; Ibrahim, A., Quagliariello, A., White, A. E., Kocher, A., Vågene‬, Å. J., Bartholdy, B. P., Spurīte, D., Ponce-Soto, Gabriel Y.,; Neumann, G., Huang, I-T., Light, I., Velsko, I. M., Jackson, I., Frangenberg, J., Serrano, J. G., Fumey, J., Özdoğan, K. T.; Blevins, K. E., Daly, K. G., Lopopolo, M., Moraitou, M., Michel, M., van Os, M., Bravo-Lopez, M. J., Sarhan, M. S., Dagtas, N. D., Oskolkov, N., Smith, O. S., Lebrasseur, O., Rozwalak, P., Eisenhofer, R., Wasef, S., Ramachandran, S. L., Vanghi, V., Warinner, C., Fellows Yates, J. A."
-      conference: "(2023) F1000"
+      conference: "(2024) F1000."
 
     - title: "TAXPASTA: TAXonomic Profile Aggregation and STAndardisation"
       link: "https://doi.org/10.21105/joss.05627"
@@ -273,17 +283,53 @@ publications:
 talks:
   title: Conferences and Invited Talks
   info:
+    - role: "Online Talk: Special Interest Group meta-omics"
+      time: "2024"
+      company: "Fellows Yates, J.A."
+      details: "Series: nf-core bytesize talks, Sep 2024, Online"
+      link: "https://nf-co.re/events/2024/bytesize_sig_meta_omics/"
+
+    - role: "Online Talk: Six tips for community-based pipeline development"
+      time: "2024"
+      company: "Fellows Yates, J.A."
+      details: "Series: nf-core bytesize talks, Jul 2024, Online"
+      link: "https://nf-co.re/events/2024/bytesize_community_coding/"
+
+    - role: "MInAS Presentations and Workshops"
+      link: "https://mixs-minas.org/"
+      time: "2024"
+      company: "Fellows Yates, J. A.,"
+      details: "MInAS Workshop, June 2024, Copenhagen, Denmark"
+
+    - role: "Invited Instructor: Bioinformatic workflows applied to aeDNA data"
+      link: "https://www.adelaide.edu.au/environment/news/list/2024/03/28/exploring-ancient-dna-for-environmental-insights"
+      time: "2024"
+      company: "Fellows Yates, J. A., Pedersen, M. W."
+      details: "Bioinformatic workflows applied to aeDNA data Workshop, Februrary 2024, Adelaide, Australia"
+
+    - role: "Conference talk: Building a community-based consensus for ancient sequencing data metadata reporting with MInAS"
+      link: "https://isba10.ut.ee/"
+      time: "2023"
+      company: "Fellows Yates, J. A.,"
+      details: "9th International Symposium for Biomolecular Archaeology, September 2023, Tartu, Estonia"
+
+    - role: "Conference talk: Metadata and smiley plots: the latest community projects from the SPAAM"
+      link: "https://www.spaam-community.org/events/2023/04/26/news_SPAAM5-registration/"
+      time: "2023"
+      company: "Fellows Yates, J.A."
+      details: "5th Standards Precautions, and Advances in Ancient Metagenomics (SPAAM5), September 2023, Tartu, Estonia"
+
     - role: "Invited Talk: Bioinformatic Resources for (Ancient) Metagenomics"
       link: "https://pastglobalchanges.org/calendar/129294"
       time: "2023"
       company: "Fellows Yates, J. A.,"
-      details: "sedaDNA Society Yearly Meeting, June 2023, Tübingen, Germany"
+      details: "sedaDNA Society Yearly Meeting, June 2023, Potsdam, Germany"
 
     - role: "Invited Talk: Community-curated NGS analysis pipelines"
       link: "https://events.medizin.uni-tuebingen.de/storage/1828/download_file.pdf"
       time: "2023"
       company: "Fellows Yates, J. A.,"
-      details: "Next Generation Sequencing Competence Network Yearly Workshop (Germany), April 2023, Tübingen, Germany"
+      details: "Next Generation Sequencing Competence Network Yearly Workshop, April 2023, Tübingen, Germany"
 
     - role: "Invited Talk: Introduction to the SPAAM community and open-science initiatives"
       link: "https://www.youtube.com/watch?v=8kR3qYcEBh8"
@@ -306,6 +352,18 @@ talks:
       company: "Fellows Yates, J. A., SPAAM community, & nf-core Community"
       details: "Applied Hologenomics, October 2022, Bilbao, Spain (Presented by supervisor due to sickness)"
 
+    - role: "Online Talk: nf-core inkscape and tube map diagrams"
+      time: "2022"
+      company: "Fellows Yates, J.A."
+      details: "Series: nf-core bytesize talks, Jul 2022, Online"
+      link: "https://nf-co.re/events/2022/bytesize-inkscape/"
+
+    - role: "Online Talk: gather.town"
+      time: "2022"
+      company: "Fellows Yates, J.A."
+      details: "Series: nf-core bytesize talks, Mar 2022, Online"
+      link: "https://nf-co.re/events/2022/bytesize-37-gathertown/"
+
     - role: "Invited Talk: Open Science Initiatives in Ancient (Meta)genomics"
       time: "2022"
       company: "Fellows Yates, J.A."
@@ -315,6 +373,12 @@ talks:
       time: "2021"
       company: "Fellows Yates, J.A., "
       details: "Series: NGI Sweden Outreach (Ancient DNA), November 2021, Online"
+
+    - role: "Online Talk: nf-core/eager"
+      time: "2021"
+      company: "Fellows Yates, J.A."
+      details: "Series: nf-core bytesize talks, Oct 2021, Online"
+      link: "https://nf-co.re/events/2021/bytesize-22-nf-core-eager/"
 
     - role: "Conference Talk: High-throughput and scalable ancient metagenomic analysis using nf-core/eager"
       time: "2021"
@@ -326,6 +390,12 @@ talks:
       company: "Fellows Yates, J.A., Lamnidis, T.C., Borry, M., Andrades Valtueña, A., Fagernäs, Z., Clayton, S., Garcia M.U, Neukamm, J., Peltzer, A."
       details: "International Symposium for Biomolecular Archaeology (ISBA9), June 2021, Online"
       link: "https://raw.githubusercontent.com/jfy133/jfy133.github.io/master/assets/files/FELLOWSYATES_James_abstract1517_poster84_ISBA9-Poster.pdf"
+
+    - role: "Online Talk: Making a new institutional profile (nf-core bytesize)"
+      time: "2021"
+      company: "Fellows Yates, J.A."
+      details: "Series: nf-core bytesize talk, Apr 2021, Online"
+      link: "https://nf-co.re/events/2021/bytesize-10-institutional-profiles/"
 
     - role: "Conference Poster: Improving access to ancient metagenomic data with the community-curated metadata repository AncientMetagenomeDir "
       time: "2021"
@@ -394,9 +464,9 @@ funding:
 #     - title:
 #       conference:fas fa-briefcase fa-stack-1x fa-inverse
 
-# teaching:
-#   title:
-#   intro:
+teaching:
+  title: "blah"
+  intro: "blah"
 
 skills:
   title: Skills &amp; Proficiency
