@@ -63,18 +63,23 @@ sidebar:
 career-profile:
   title: Career Profile
   summary: |
-    James is a biomolecular archaeologist turned bioinformatician. His work 
+    James is a biomolecular archaeologist turned bioinformatician and research software engineer. His work 
     currently focuses on the development of pipelines and tools for 
-    high-throughput analysis of next generation sequencing data of ancient 
-    metagenomics. He leads the development and is a contributor to a range of 
-    open-source metagenomics Nextflow pipelines and as well as tools in
-    written in in R and Shiny. He is a core member of the [nf-core](https://nf-co.re) 
+    high-throughput analysis of next generation sequencing data for 
+    metagenomics, and developing metadata infrastructure for ancient DNA sequences. 
+    He leads the development and is a contributor to a range of 
+    open-source metagenomics Nextflow pipelines and as well as R packages. 
+
+    He is a core member of the [nf-core](https://nf-co.re) 
     bioinformatics pipeline initiative and the founder of the [SPAAM 
     community](https://spaam-community.io) of ancient metagenomics researchers, 
     the latter of which he runs a collaborative project improving access to 
-    ancient metagenomic data via metadata standardisation. He is also a trustee of 
+    ancient metagenomic data via metadata standardisation. 
+
+    He was also a trustee of 
     the [International Society for Biomolecular Archaeology](https://isbarch.org) and webmaster.
-    His general passionis for open science, spanning: open-data, open-software, 
+
+    His general passion is for open science, spanning: open-data, open-software, 
     [open-protocols](https://dx.doi.org/10.17504/protocols.io.bvt9n6r6), and community-based development.
 education:
   title: Education
