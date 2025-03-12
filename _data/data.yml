@@ -23,7 +23,7 @@ sidebar:
   ##telegram: # add your nickname without '@' sign
   #gitlab:
   #bitbucket:
-  twitter: "@jfy133"
+  #twitter: "@jfy133"
   mastodon: "@jfy133"
   researchgate: "James-Fellows-Yates"
   googlescholar: "5Wy_JDgAAAAJ&hl"
@@ -123,7 +123,7 @@ experiences:
       details: |
         Development of approaches and tools for novel archaeological metagenomic 
         data for an ERC project.
-    - role: Research Assistance
+    - role: Research Assistant
       time: 2015
       company: AG Biogeologie, Biogeologie, Eberhard Karls Universität Tübingen
       details: |
@@ -135,7 +135,7 @@ experiences:
 oss:
   title: OSS Contributions
   intro: |
-    See Projects. All projects contributed to date are OSS.
+    All software projects contributed to date are OSS. See Projects for non-software.
   contributions:
     - title: nf-core/taxprofiler
       link: "https://github.com/nf-core/taxprofiler"
@@ -168,29 +168,34 @@ oss:
 projects:
   title: Projects
   intro: >
-    A list of the main set of non-software open source projects I am currently working on or have developed.
+    A list of the main set of non-software open source projects I am currently working on or have developed. See OSS Contributions for software.
   assignments:
     - title: "MInAS"
       link: "https://mixs-minas.org/"
-      tagline: "The MInAS project aims to develop standardised metadata reporting schemes of ancient DNA samples and sequencing data via community-based consensus and training."
+      tagline: "Founder and co-lead of the MInAS project that aims to develop standardised metadata reporting schemes of ancient DNA samples and sequencing data via community-based consensus and training."
 
     - title: "AncientMetagenomeDir"
       link: "https://github.com/SPAAM-community/AncientMetagenomeDir"
-      tagline: "Community-curated repository of standardised metadata and download information for all publically available ancient (microbial) (meta)genome"
+      tagline: "Founder and co-load of a community-curated repository of standardised metadata and download information for all publically available ancient (microbial) (meta)genome"
 
     - title: "Introduction to Ancient Metagenomics (SPAAM Summer School and Textbook)"
       link: "https://spaam-community.org/intro-to-ancient-metagenomics-book/"
-      tagline: "A yearly practical summer school/block course introducting graduate and doctoral students to the basic bioinformatic workflows ancient metagenomics. All teaching material is dervied on a community curated textbook"
+      tagline: "Founder and organiser of a yearly practical summer school/block course introducting graduate and doctoral students to the basic bioinformatic workflows ancient metagenomics. All teaching material is dervied on a community curated textbook"
 
     - title: "Little Book of Smiley Plots"
       link: "https://www.spaam-community.org/little-book-of-smiley-plots/"
-      tagline: "A light-hearted reference book of ancient DNA damage plots and their causes"
+      tagline: "Founder of a light-hearted reference book of ancient DNA damage plots and their causes"
 
 publications:
   title: Publications
   intro: |
-    My publications and preprints
+    My publications, preprints, and other publications
   papers:
+    - title: " Ancient DNA data hold insights into past organisms and ecosystems - handle them with more care"
+      link: "https://doi.org/10.1038/d41586-024-03993-z"
+      authors: "Bertström, M., Fellows Yates, J. A., & Warinner, C."
+      conference: "(2024) Nature (p. 296–298)."
+
     - title: "Empowering bioinformatics communities with  Nextflow and nf-core"
       link: "https://doi.org/10.1101/2024.05.10.592912"
       authors: "Langer, B. E., Amaral, A., Baudement, M.-O., Bonath, F., Charles, M., Chitneedi, P. K., Clark, E. L., Di Tommaso, P., Djebali, S., Ewels, P. A., Eynard, S., Fellows Yates, J. A., Fischer, D., Floden, E. W., Foissac, S., Gabernet, G., Garcia, M. U., Gillard, G., Gundappa, M. K., … nf-core community."
@@ -281,9 +286,28 @@ publications:
       authors: "Warinner, C., Herbig, A., Mann, A., Fellows Yates, J. A., Weiß, C. L., Burbano, H. A., Orlando, L., & Krause, J."
       conference: "(2017) Annual Review of Genomics and Human Genetics, 18, 321-356"
 
+## TODO Add teaching, and other events (workshops)
 talks:
   title: Conferences and Invited Talks
   info:
+    - role: "Conference poster: Integrated microbiome sequencing data analysis with nf-core"
+      time: "2024"
+      company: "Fellows Yates, J. A., Stamouli, S., Andersson-Li, L., Beber, M. E., Borry, M., Miller, C., Downie, J., Lundin, D., Straub, D., Krakau, S., Hübner, A., Ibrahim, A., Frangenberg, J., Perelo, L., Stallforth, P., Warinner C., nf-core community"
+      details: "NFDI4Microbiota Anual Meeting, Dec 2024, Leipzig, Germany"
+      link: "https://events.hifis.net/event/1756/"
+
+    - role: "Conference poster: Scalable and efﬁcient data analysis pipelines for clinical metagenomics from nf-core"
+      time: "2024"
+      company: "Fellows Yates, J. A., Stamouli, S., Andersson-Li, L., Beber, M. E., Borry, M., Miller, C., Downie, J., Lundin, D., Straub, D., Krakau, S., Hübner, A., Ibrahim, A., Frangenberg, J., Perelo, L., Stallforth, P., Warinner C., nf-core community"
+      details: "9th International Conference on Clinical Metagenomics, November 2024, Geneva, Switzerland"
+      link: "https://clinicalmetagenomics.org/"
+
+    - role: "Conference poster: Integrated metagenomic data processing with nf-core"
+      time: "2024"
+      company: "Fellows Yates, J. A., Stamouli, S., Andersson-Li, L., Beber, M. E., Borry, M., Miller, C., Downie, J., Lundin, D., Straub, D., Krakau, S., Hübner, A., Ibrahim, A., Frangenberg, J., Perelo, L., Stallforth, P., Warinner C., nf-core community"
+      details: "Nextflow Summit, October 2024, Barcelona, Spain"
+      link: "https://summit.nextflow.io/2024/"
+
     - role: "Online Talk: Special Interest Group meta-omics"
       time: "2024"
       company: "Fellows Yates, J.A."
@@ -296,11 +320,17 @@ talks:
       details: "Series: nf-core bytesize talks, Jul 2024, Online"
       link: "https://nf-co.re/events/2024/bytesize_community_coding/"
 
-    - role: "MInAS Presentations and Workshops"
+    - role: "Workshop: MInAS Presentations and Workshops"
       link: "https://mixs-minas.org/"
       time: "2024"
       company: "Fellows Yates, J. A.,"
       details: "MInAS Workshop, June 2024, Copenhagen, Denmark"
+
+    - role: "Online talk: Improving reporting and reproducibility of lab work in biomolecular archaeology (with protocols.io)"
+      link: "https://www.youtube.com/watch?v=vG9APV4__R0"
+      time: "2024"
+      company: "Fellows Yates, J. A.,"
+      details: "ISBA Community Seminar Series, May 2024, Online"
 
     - role: "Invited Instructor: Bioinformatic workflows applied to aeDNA data"
       link: "https://www.adelaide.edu.au/environment/news/list/2024/03/28/exploring-ancient-dna-for-environmental-insights"
@@ -447,6 +477,11 @@ talks:
 funding:
   title: Funding and Grants
   info:
+    - role: FlexFund Project EnterArchaeo
+      time: 2025 - 2024
+      company: NFDI4Microbiota
+      details: |
+        Funding for enhancing training, resource development, and analytical reproducibility in ancient microbiome research. €60,000
     - role: Studienstipendien für Graduierte aller wissenschaftlichen Fächer
       time: 2014 - 2015
       company: DAAD - Deutscher Akademischer Austauschdienst
@@ -479,7 +514,7 @@ skills:
     - name: R
       level: 75%
 
-    - name: Conda
+    - name: Conda / Bioconda
       level: 65%
 
     - name: HPCs
@@ -491,12 +526,12 @@ skills:
     - name: Linux
       level: 50%
 
-    - name: Git
+    - name: Git / GitHub
       level: 50%
 
 posts:
   title: "Blog"
-  intro: "These are my blog posts"
+  intro: "These are my personal blog posts (other posts maybe found in other venue)"
 
 footer: >
-  Contents: 2023 ©️ <a href="https://jafy.eu">James A. Fellows Yates<a>. Theme Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>.
+  Contents: 2025 ©️ <a href="https://jafy.eu">James A. Fellows Yates<a>. Theme Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>.
