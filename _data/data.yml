@@ -198,7 +198,7 @@ publications:
   papers:
     - title: " Ancient DNA data hold insights into past organisms and ecosystems - handle them with more care"
       link: "https://doi.org/10.1038/d41586-024-03993-z"
-      authors: "Bertström, M., Fellows Yates, J. A., & Warinner, C."
+      authors: "Bergström, M., Fellows Yates, J. A., & Warinner, C."
       conference: "(2024) Nature (p. 296–298)."
 
     - title: "Empowering bioinformatics communities with  Nextflow and nf-core"
