@@ -300,6 +300,12 @@ publications:
 talks:
   title: Conferences and Invited Talks
   info:
+    - role: "Conference talk: The importance of community in the development of ancient DNA metadata standards"
+      time: "2025"
+      company: "Fellows Yates, J. A.,"
+      details: "GSC25 Meeting, July 2025, Cambridge, UK"
+      link: "https://genomicsstandardsconsortium.github.io/GSC25-Cambridge/"
+
     - role: "Conference poster: Integrated microbiome sequencing data analysis with nf-core"
       time: "2024"
       company: "Fellows Yates, J. A., Stamouli, S., Andersson-Li, L., Beber, M. E., Borry, M., Miller, C., Downie, J., Lundin, D., Straub, D., Krakau, S., Hübner, A., Ibrahim, A., Frangenberg, J., Perelo, L., Stallforth, P., Warinner C., nf-core community"
