@@ -196,7 +196,12 @@ publications:
   intro: |
     My publications, preprints, and other publications
   papers:
-    - title: " Ancient DNA data hold insights into past organisms and ecosystems - handle them with more care"
+    - title: "Empowering bioinformatics communities with Nextflow and nf-core"
+      link: "https://doi.org/10.1186/s13059-025-03673-9"
+      authors: "Langer, B.E., Amaral, A., Baudement, M.-O., Bonath, F., Charles, M., Chitneedi, P.K., Clark, E.L., Di Tommaso, P., Djebali, S., Ewels, P.A., Eynard, S., Fellows Yates, J.A., Fischer, D., Floden, E.W., Foissac, S., Gabernet, G., Garcia, M.U., Gillard, G., Gundappa, M.K., Guyomar, C., Hakkaart, C., Hanssen, F., Harrison, P.W., Hörtenhuber, M., Kurylo, C., Kühn, C., Lagarrigue, S., Lallias, D., Macqueen, D.J., Miller, E., Mir-Pedrol, J., Moreira, G.C.M., Nahnsen, S., Patel, H., Peltzer, A., Pitel, F., Ramayo-Caldas, Y., Ribeiro-Dantas, M. da C., Rocha, D., Salavati, M., Sokolov, A., Espinosa-Carrasco, J., Notredame, C., community, the nf-core"
+      conference: "(2025) Genome Biology (26) 1"
+
+    - title: "Ancient DNA data hold insights into past organisms and ecosystems - handle them with more care"
       link: "https://doi.org/10.1038/d41586-024-03993-z"
       authors: "Bergström, M., Fellows Yates, J. A., & Warinner, C."
       conference: "(2024) Nature (p. 296–298)."
@@ -480,8 +485,13 @@ talks:
       link: "http://dx.doi.org/10.13140/RG.2.2.33453.28648"
 
 funding:
-  title: Funding and Grants
+  title: Funding, Grants, Awards
   info:
+    - role: Dawn Field Award for Outsanding Contributions to Genomic Standards
+      time: 2025
+      company: Genomic Standards Consortium
+      details: |
+        Award for outstanding contributions to genomic standards in ancient DNA ($2000)
     - role: FlexFund Project EnterArchaeo
       time: 2025 - 2024
       company: NFDI4Microbiota
