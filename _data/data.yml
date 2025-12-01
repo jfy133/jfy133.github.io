@@ -221,6 +221,11 @@ publications:
       authors: "Borry, M., Forsythe, A., Valtueña Andrades, A., Hübner, A.,; Ibrahim, A., Quagliariello, A., White, A. E., Kocher, A., Vågene‬, Å. J., Bartholdy, B. P., Spurīte, D., Ponce-Soto, Gabriel Y.,; Neumann, G., Huang, I-T., Light, I., Velsko, I. M., Jackson, I., Frangenberg, J., Serrano, J. G., Fumey, J., Özdoğan, K. T.; Blevins, K. E., Daly, K. G., Lopopolo, M., Moraitou, M., Michel, M., van Os, M., Bravo-Lopez, M. J., Sarhan, M. S., Dagtas, N. D., Oskolkov, N., Smith, O. S., Lebrasseur, O., Rozwalak, P., Eisenhofer, R., Wasef, S., Ramachandran, S. L., Vanghi, V., Warinner, C., Fellows Yates, J. A."
       conference: "(2024) F1000."
 
+    - title: "nf-core/taxprofiler: Highly parallelised and flexible pipeline for metagenomic taxonomic classification and profiling"
+      link: "https://doi.org/10.1101/2023.10.20.563221"
+      authors: "Stamouli, S., Beber, M. E., Normark, T., Christensen, T. A., Andersson-Li, L., Borry, M., Jamy, M., nf-core community, & Fellows Yates, J. A."
+      conference: "(2023) In bioRxiv (p. 2023.10.20.563221)."
+
     - title: "TAXPASTA: TAXonomic Profile Aggregation and STAndardisation"
       link: "https://doi.org/10.21105/joss.05627"
       authors: "Beber, M. E., Borry, M., Stamouli, S., Fellows Yates, J. A."
