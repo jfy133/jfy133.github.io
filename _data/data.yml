@@ -63,23 +63,17 @@ sidebar:
 career-profile:
   title: Career Profile
   summary: |
-    James is a biomolecular archaeologist turned bioinformatician and research software engineer. His work 
-    currently focuses on the development of pipelines and tools for 
-    high-throughput analysis of next generation sequencing data for 
-    metagenomics, and developing metadata infrastructure for ancient DNA sequences. 
-    He leads the development and is a contributor to a range of 
-    open-source metagenomics Nextflow pipelines and as well as R packages. 
+    James is a biomolecular archaeologist turned bioinformatician and research software engineer.
+    His work currently focuses on the development of reproducible and scalable pipelines and tools for high-throughput analysis of next generation sequencing data for 
+    metagenomics, and developing FAIR metadata infrastrucure for ancient DNA sequences. 
+    He leads the development and is a contributor to a range of open-source metagenomics Nextflow pipelines, the 'MInAS' LinkML based metadata schema, and as well as R packages. 
 
     He is a core member of the [nf-core](https://nf-co.re) 
-    bioinformatics pipeline initiative and the founder of the [SPAAM 
-    community](https://spaam-community.io) of ancient metagenomics researchers, 
-    the latter of which he runs a collaborative project improving access to 
-    ancient metagenomic data via metadata standardisation. 
-
-    He was also a trustee of 
+    bioinformatics pipeline initiative and was the founder of the [SPAAM 
+    community](https://spaam-community.io) of ancient metagenomics researchers, formerly a trustee of 
     the [International Society for Biomolecular Archaeology](https://isbarch.org) and webmaster.
 
-    His general passion is for open science, spanning: open-data, open-software, 
+    His general passion is for open science, spanning: open-data, open-software, open teaching material,
     [open-protocols](https://dx.doi.org/10.17504/protocols.io.bvt9n6r6), and community-based development.
 education:
   title: Education
@@ -196,10 +190,21 @@ publications:
   intro: |
     My publications, preprints, and other publications
   papers:
+
+    - title: "The oral microbiome of King Richard III of England."
+      link: "https://doi.org/10.1101/2025.09.21.677585"
+      authors: "Velsko, I. M., Hübner, A., Fagernäs, Z., Yates, J. F., Mann, A. E., Hofman, C., Ozga, A. T., Lewis, C. M., Jr, Speller, C., Fiddyment, S., Francken, M., Wahl, J., Krause, J., Radini, A., King, T., & Warinner, C."
+      conference: " (2025).  In bioRxiv (p. 2025.09.21.677585)."
+
+    - title: "nf-core/proteinfamilies: A scalable pipeline for the generation of protein families"
+      link: "https://doi.org/10.1101/2025.08.12.670010"
+      authors: "Karatzas, E., Beracochea, M., Baltoumas, F. A., Aplakidou, E., Richardson, L., Fellows Yates, J. A., Lundin, D., nf-core community, Buluç, A., Kyrpides, N. C., Georgakopoulos-Soares, I., Pavlopoulos, G. A., & Finn, R. D."
+      conference: "(2025), bioRxiv, (p. 2025.08. 12.670010."
+
     - title: "Empowering bioinformatics communities with Nextflow and nf-core"
       link: "https://doi.org/10.1186/s13059-025-03673-9"
       authors: "Langer, B.E., Amaral, A., Baudement, M.-O., Bonath, F., Charles, M., Chitneedi, P.K., Clark, E.L., Di Tommaso, P., Djebali, S., Ewels, P.A., Eynard, S., Fellows Yates, J.A., Fischer, D., Floden, E.W., Foissac, S., Gabernet, G., Garcia, M.U., Gillard, G., Gundappa, M.K., Guyomar, C., Hakkaart, C., Hanssen, F., Harrison, P.W., Hörtenhuber, M., Kurylo, C., Kühn, C., Lagarrigue, S., Lallias, D., Macqueen, D.J., Miller, E., Mir-Pedrol, J., Moreira, G.C.M., Nahnsen, S., Patel, H., Peltzer, A., Pitel, F., Ramayo-Caldas, Y., Ribeiro-Dantas, M. da C., Rocha, D., Salavati, M., Sokolov, A., Espinosa-Carrasco, J., Notredame, C., community, the nf-core"
-      conference: "(2025) Genome Biology (26) 1"
+      conference: "(2025) Genome Biology (26) 1."
 
     - title: "Ancient DNA data hold insights into past organisms and ecosystems - handle them with more care"
       link: "https://doi.org/10.1038/d41586-024-03993-z"
